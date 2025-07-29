@@ -158,7 +158,7 @@ python test_agency_recommend.py
 使用命令行对话系统验证智能助理功能：
 
 ```bash
-python api/insurance_chat_system.py
+python test_agency_assistant.py
 ```
 
 **功能特性：**
