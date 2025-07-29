@@ -38,3 +38,7 @@
 2025-07-29 18:27:34,943 - ai_insurance - INFO - agency_assistant.py:245 - 生成助理建议
 2025-07-29 18:27:49,739 - ai_insurance - INFO - agency_assistant.py:193 - 生成AI用户回应
 2025-07-29 18:27:57,277 - ai_insurance - INFO - agency_assistant.py:319 - 完成智能对话助理分析
+2025-07-29 20:21:05,848 - ai_insurance - INFO - agency_assistant.py:104 - 开始分析经纪人话语意图
+2025-07-29 20:21:09,514 - ai_insurance - INFO - agency_assistant.py:245 - 生成助理建议
+2025-07-29 20:21:22,810 - ai_insurance - INFO - agency_assistant.py:193 - 生成AI用户回应
+2025-07-29 20:21:30,268 - ai_insurance - INFO - agency_assistant.py:319 - 完成智能对话助理分析
