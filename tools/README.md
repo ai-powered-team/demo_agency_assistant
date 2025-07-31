@@ -72,9 +72,6 @@ CRAWLER_CONFIG['include_content'] = True
 当前支持以下深蓝保页面的爬取：
 
 - 避坑指南：https://www.shenlanbao.com/zhinan/list-23
-- 小白入门：https://www.shenlanbao.com/zhinan/list-20
-- 购险必看：https://www.shenlanbao.com/zhinan/list-21
-- 理赔科普：https://www.shenlanbao.com/zhinan/list-22
 
 ## 输出格式
 

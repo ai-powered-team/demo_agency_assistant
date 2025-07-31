@@ -104,7 +104,7 @@ VECTOR_STORE_PATH=data/vector_store
 
 # 检索参数
 RETRIEVAL_TOP_K=5
-SIMILARITY_THRESHOLD=0.7
+SIMILARITY_THRESHOLD=0.3
 ```
 
 ### 代码配置
@@ -115,7 +115,7 @@ RAG_CONFIG = {
     "embedding_model": "text-embedding-v4",  # 阿里云通义千问embedding
     "vector_store_type": "faiss",
     "retrieval_top_k": 5,
-    "similarity_threshold": 0.7
+    "similarity_threshold": 0.3
 }
 ```
 

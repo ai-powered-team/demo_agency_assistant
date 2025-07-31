@@ -278,15 +278,55 @@ class AgencyAssistantTester:
                     value_str = str(value) if value else "未识别"
                 print(f"  {icon} {display_name}: {Fore.YELLOW}{value_str}{Style.RESET_ALL}")
 
-    def _print_suggestions(self, suggestions: List[str]):
-        """打印对话建议"""
+    def _print_suggestions(self, suggestions):
+        """打印建议"""
         if not suggestions:
             return
 
-        print(f"\n{Fore.MAGENTA}💡 对话建议:{Style.RESET_ALL}")
-        print("─" * 50)
-        for i, suggestion in enumerate(suggestions, 1):
-            print(f"  {i}. {suggestion}")
+        # 检查是否为新的结构化格式
+        if isinstance(suggestions, dict) and "reminders" in suggestions and "questions" in suggestions:
+            self._print_structured_suggestions(suggestions)
+        elif isinstance(suggestions, list):
+            # 兼容旧格式
+            print(f"\n{Fore.MAGENTA}💡 对话建议:{Style.RESET_ALL}")
+            print("─" * 50)
+            for i, suggestion in enumerate(suggestions, 1):
+                print(f"  {i}. {suggestion}")
+        else:
+            print(f"{Fore.YELLOW}⚠️  建议格式不正确{Style.RESET_ALL}")
+
+    def _print_structured_suggestions(self, suggestions: dict):
+        """打印提醒与提问"""
+        print(f"\n{Fore.MAGENTA}💡 智能对话建议:{Style.RESET_ALL}")
+        print("═" * 50)
+        
+        # 打印提醒模块
+        reminders = suggestions.get("reminders", {})
+        if reminders:
+            print(f"\n{Fore.CYAN}🔍 提醒模块:{Style.RESET_ALL}")
+            
+            # 信息要点
+            key_points = reminders.get("key_points", [])
+            if key_points:
+                print(f"  {Fore.BLUE}📋 信息要点:{Style.RESET_ALL}")
+                for i, point in enumerate(key_points, 1):
+                    print(f"    {i}. {point}")
+            
+            # 潜在坑点
+            potential_risks = reminders.get("potential_risks", [])
+            if potential_risks:
+                print(f"  {Fore.RED}⚠️  潜在坑点:{Style.RESET_ALL}")
+                for i, risk in enumerate(potential_risks, 1):
+                    print(f"    {i}. {risk}")
+        
+        # 打印提问模块（简化）
+        questions = suggestions.get("questions", [])
+        if questions:
+            print(f"\n{Fore.GREEN}❓ 提问建议:{Style.RESET_ALL}")
+            for i, q in enumerate(questions, 1):
+                print(f"  {i}. {q}")
+        
+        print("═" * 50)
 
     def print_conversation_history(self):
         """打印对话历史"""
@@ -368,13 +408,11 @@ class AgencyAssistantTester:
         
         # 测试查询列表
         test_queries = [
-            "保费上涨",
-            "费率比较",
-            "首年便宜",
-            "保障责任",
-            "理赔条件",
-            "医疗险便宜",
-            "重疾险费用"
+            "我们这款重疾险保费极低！",
+            "我们首年保费很便宜的！",
+            "我们理赔条件非常低。",
+            "我们可以报销全部重疾费用",
+            "我们公司产品100%报销"
         ]
         
         print(f"{Fore.CYAN}📊 将测试以下查询:{Style.RESET_ALL}")
@@ -444,10 +482,9 @@ class AgencyAssistantTester:
             
             async for response in self.assistant.assist_conversation(request):
                 if response.get("type") == "suggestions":
-                    suggestions = response.get("data", {}).get("suggestions", [])
-                    print(f"\n{Fore.GREEN}💡 RAG增强的建议:{Style.RESET_ALL}")
-                    for j, suggestion in enumerate(suggestions, 1):
-                        print(f"  {j}. {suggestion}")
+                    suggestions = response.get("data", {}).get("suggestions", {})
+                    print(f"\n{Fore.GREEN}💡 RAG增强的结构化建议:{Style.RESET_ALL}")
+                    self._print_suggestions(suggestions)
                     break
             
         except Exception as e:

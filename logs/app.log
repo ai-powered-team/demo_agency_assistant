@@ -187,3 +187,252 @@
 2025-07-31 14:13:29,806 - ai_insurance - INFO - agency_assistant.py:366 - 建议生成已融入RAG坑点检索结果
 2025-07-31 14:13:29,812 - ai_insurance - INFO - agency_assistant.py:202 - 生成AI用户回应
 2025-07-31 14:13:36,301 - ai_insurance - INFO - agency_assistant.py:383 - 完成智能对话助理分析
+2025-07-31 15:12:41,569 - ai_insurance - INFO - rag_pit_detector.py:158 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 15:12:41,570 - ai_insurance - WARNING - rag_pit_detector.py:257 - 向量数据库文件不存在: ../data/vector_store/faiss_index
+2025-07-31 15:12:41,570 - ai_insurance - INFO - rag_pit_detector.py:296 - 未找到现有向量数据库，将创建新的数据库
+2025-07-31 15:12:41,570 - ai_insurance - INFO - rag_pit_detector.py:92 - 开始加载保险坑点数据: data/insurance_pits_merged.json
+2025-07-31 15:12:41,580 - ai_insurance - INFO - rag_pit_detector.py:126 - 成功加载 660 条保险坑点数据
+2025-07-31 15:12:41,580 - ai_insurance - INFO - rag_pit_detector.py:174 - 开始创建向量数据库
+2025-07-31 15:12:41,589 - ai_insurance - INFO - rag_pit_detector.py:188 - 文档分割完成，共 660 个文档块
+2025-07-31 15:12:41,589 - ai_insurance - INFO - rag_pit_detector.py:203 - 分批处理文档，每批 8 个
+2025-07-31 15:12:42,883 - ai_insurance - INFO - rag_pit_detector.py:211 - 处理第1批: 8 个文档
+2025-07-31 15:12:42,884 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第2批: 8 个文档
+2025-07-31 15:12:43,500 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第3批: 8 个文档
+2025-07-31 15:12:44,267 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第4批: 8 个文档
+2025-07-31 15:12:44,938 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第5批: 8 个文档
+2025-07-31 15:12:45,598 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第6批: 8 个文档
+2025-07-31 15:12:46,211 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第7批: 8 个文档
+2025-07-31 15:12:46,917 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第8批: 8 个文档
+2025-07-31 15:12:47,534 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第9批: 8 个文档
+2025-07-31 15:12:48,156 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第10批: 8 个文档
+2025-07-31 15:12:48,704 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第11批: 8 个文档
+2025-07-31 15:12:49,382 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第12批: 8 个文档
+2025-07-31 15:12:49,933 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第13批: 8 个文档
+2025-07-31 15:12:50,593 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第14批: 8 个文档
+2025-07-31 15:12:51,250 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第15批: 8 个文档
+2025-07-31 15:12:51,877 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第16批: 8 个文档
+2025-07-31 15:12:52,538 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第17批: 8 个文档
+2025-07-31 15:12:53,174 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第18批: 8 个文档
+2025-07-31 15:12:53,783 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第19批: 8 个文档
+2025-07-31 15:12:54,512 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第20批: 8 个文档
+2025-07-31 15:12:55,106 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第21批: 8 个文档
+2025-07-31 15:12:55,823 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第22批: 8 个文档
+2025-07-31 15:12:56,309 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第23批: 8 个文档
+2025-07-31 15:12:56,843 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第24批: 8 个文档
+2025-07-31 15:12:57,371 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第25批: 8 个文档
+2025-07-31 15:12:57,883 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第26批: 8 个文档
+2025-07-31 15:12:58,376 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第27批: 8 个文档
+2025-07-31 15:12:58,972 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第28批: 8 个文档
+2025-07-31 15:12:59,473 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第29批: 8 个文档
+2025-07-31 15:13:00,051 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第30批: 8 个文档
+2025-07-31 15:13:00,627 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第31批: 8 个文档
+2025-07-31 15:13:01,259 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第32批: 8 个文档
+2025-07-31 15:13:01,870 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第33批: 8 个文档
+2025-07-31 15:13:02,488 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第34批: 8 个文档
+2025-07-31 15:13:03,077 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第35批: 8 个文档
+2025-07-31 15:13:03,722 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第36批: 8 个文档
+2025-07-31 15:13:04,541 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第37批: 8 个文档
+2025-07-31 15:13:05,095 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第38批: 8 个文档
+2025-07-31 15:13:05,730 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第39批: 8 个文档
+2025-07-31 15:13:06,368 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第40批: 8 个文档
+2025-07-31 15:13:06,973 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第41批: 8 个文档
+2025-07-31 15:13:07,710 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第42批: 8 个文档
+2025-07-31 15:13:08,329 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第43批: 8 个文档
+2025-07-31 15:13:08,931 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第44批: 8 个文档
+2025-07-31 15:13:09,563 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第45批: 8 个文档
+2025-07-31 15:13:10,083 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第46批: 8 个文档
+2025-07-31 15:13:10,577 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第47批: 8 个文档
+2025-07-31 15:13:11,087 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第48批: 8 个文档
+2025-07-31 15:13:11,588 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第49批: 8 个文档
+2025-07-31 15:13:12,082 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第50批: 8 个文档
+2025-07-31 15:13:12,588 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第51批: 8 个文档
+2025-07-31 15:13:13,129 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第52批: 8 个文档
+2025-07-31 15:13:13,608 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第53批: 8 个文档
+2025-07-31 15:13:17,331 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第54批: 8 个文档
+2025-07-31 15:13:17,859 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第55批: 8 个文档
+2025-07-31 15:13:18,485 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第56批: 8 个文档
+2025-07-31 15:13:19,016 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第57批: 8 个文档
+2025-07-31 15:13:19,547 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第58批: 8 个文档
+2025-07-31 15:13:20,069 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第59批: 8 个文档
+2025-07-31 15:13:20,577 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第60批: 8 个文档
+2025-07-31 15:13:21,119 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第61批: 8 个文档
+2025-07-31 15:13:21,615 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第62批: 8 个文档
+2025-07-31 15:13:22,097 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第63批: 8 个文档
+2025-07-31 15:13:22,661 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第64批: 8 个文档
+2025-07-31 15:13:23,274 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第65批: 8 个文档
+2025-07-31 15:13:23,759 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第66批: 8 个文档
+2025-07-31 15:13:24,282 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第67批: 8 个文档
+2025-07-31 15:13:24,807 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第68批: 8 个文档
+2025-07-31 15:13:25,308 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第69批: 8 个文档
+2025-07-31 15:13:25,796 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第70批: 8 个文档
+2025-07-31 15:13:26,335 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第71批: 8 个文档
+2025-07-31 15:13:26,824 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第72批: 8 个文档
+2025-07-31 15:13:27,380 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第73批: 8 个文档
+2025-07-31 15:13:27,852 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第74批: 8 个文档
+2025-07-31 15:13:28,298 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第75批: 8 个文档
+2025-07-31 15:13:28,920 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第76批: 8 个文档
+2025-07-31 15:13:29,517 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第77批: 8 个文档
+2025-07-31 15:13:30,267 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第78批: 8 个文档
+2025-07-31 15:13:30,847 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第79批: 8 个文档
+2025-07-31 15:13:31,386 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第80批: 8 个文档
+2025-07-31 15:13:31,842 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第81批: 8 个文档
+2025-07-31 15:13:32,396 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第82批: 8 个文档
+2025-07-31 15:13:32,905 - ai_insurance - INFO - rag_pit_detector.py:218 - 处理第83批: 4 个文档
+2025-07-31 15:13:33,264 - ai_insurance - INFO - rag_pit_detector.py:229 - FAISS向量数据库创建成功
+2025-07-31 15:13:33,310 - ai_insurance - INFO - rag_pit_detector.py:245 - 向量数据库已保存到: ../data/vector_store/faiss_index
+2025-07-31 15:13:33,311 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 15:23:22,103 - ai_insurance - INFO - rag_pit_detector.py:157 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 15:23:23,229 - ai_insurance - INFO - rag_pit_detector.py:265 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 15:23:23,229 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 15:31:51,675 - ai_insurance - INFO - rag_pit_detector.py:157 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 15:31:51,675 - ai_insurance - WARNING - rag_pit_detector.py:256 - 向量数据库文件不存在: data/vector_store/faiss_index
+2025-07-31 15:31:51,675 - ai_insurance - INFO - rag_pit_detector.py:295 - 未找到现有向量数据库，将创建新的数据库
+2025-07-31 15:31:51,675 - ai_insurance - INFO - rag_pit_detector.py:91 - 开始加载保险坑点数据: data/insurance_pits_merged.json
+2025-07-31 15:31:51,686 - ai_insurance - INFO - rag_pit_detector.py:125 - 成功加载 660 条保险坑点数据
+2025-07-31 15:31:51,686 - ai_insurance - INFO - rag_pit_detector.py:173 - 开始创建向量数据库
+2025-07-31 15:31:51,694 - ai_insurance - INFO - rag_pit_detector.py:187 - 文档分割完成，共 660 个文档块
+2025-07-31 15:31:51,694 - ai_insurance - INFO - rag_pit_detector.py:202 - 分批处理文档，每批 8 个
+2025-07-31 15:31:53,318 - ai_insurance - INFO - rag_pit_detector.py:210 - 处理第1批: 8 个文档
+2025-07-31 15:31:53,318 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第2批: 8 个文档
+2025-07-31 15:31:53,757 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第3批: 8 个文档
+2025-07-31 15:31:54,276 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第4批: 8 个文档
+2025-07-31 15:31:55,047 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第5批: 8 个文档
+2025-07-31 15:31:55,543 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第6批: 8 个文档
+2025-07-31 15:31:56,006 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第7批: 8 个文档
+2025-07-31 15:31:56,534 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第8批: 8 个文档
+2025-07-31 15:31:57,207 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第9批: 8 个文档
+2025-07-31 15:31:57,791 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第10批: 8 个文档
+2025-07-31 15:31:58,309 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第11批: 8 个文档
+2025-07-31 15:31:58,824 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第12批: 8 个文档
+2025-07-31 15:31:59,381 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第13批: 8 个文档
+2025-07-31 15:31:59,879 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第14批: 8 个文档
+2025-07-31 15:32:00,458 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第15批: 8 个文档
+2025-07-31 15:32:01,030 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第16批: 8 个文档
+2025-07-31 15:32:01,562 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第17批: 8 个文档
+2025-07-31 15:32:02,130 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第18批: 8 个文档
+2025-07-31 15:32:02,669 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第19批: 8 个文档
+2025-07-31 15:32:03,386 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第20批: 8 个文档
+2025-07-31 15:32:04,071 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第21批: 8 个文档
+2025-07-31 15:32:04,683 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第22批: 8 个文档
+2025-07-31 15:32:05,315 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第23批: 8 个文档
+2025-07-31 15:32:05,928 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第24批: 8 个文档
+2025-07-31 15:32:06,945 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第25批: 8 个文档
+2025-07-31 15:32:07,571 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第26批: 8 个文档
+2025-07-31 15:32:08,275 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第27批: 8 个文档
+2025-07-31 15:32:08,861 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第28批: 8 个文档
+2025-07-31 15:32:09,416 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第29批: 8 个文档
+2025-07-31 15:32:09,936 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第30批: 8 个文档
+2025-07-31 15:32:10,538 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第31批: 8 个文档
+2025-07-31 15:32:11,195 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第32批: 8 个文档
+2025-07-31 15:32:11,805 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第33批: 8 个文档
+2025-07-31 15:32:12,582 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第34批: 8 个文档
+2025-07-31 15:32:13,215 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第35批: 8 个文档
+2025-07-31 15:32:13,884 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第36批: 8 个文档
+2025-07-31 15:32:14,444 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第37批: 8 个文档
+2025-07-31 15:32:15,015 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第38批: 8 个文档
+2025-07-31 15:32:15,585 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第39批: 8 个文档
+2025-07-31 15:32:16,144 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第40批: 8 个文档
+2025-07-31 15:32:16,679 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第41批: 8 个文档
+2025-07-31 15:32:17,192 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第42批: 8 个文档
+2025-07-31 15:32:17,895 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第43批: 8 个文档
+2025-07-31 15:32:18,506 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第44批: 8 个文档
+2025-07-31 15:32:19,097 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第45批: 8 个文档
+2025-07-31 15:32:19,760 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第46批: 8 个文档
+2025-07-31 15:32:20,352 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第47批: 8 个文档
+2025-07-31 15:32:20,964 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第48批: 8 个文档
+2025-07-31 15:32:21,583 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第49批: 8 个文档
+2025-07-31 15:32:22,144 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第50批: 8 个文档
+2025-07-31 15:32:22,984 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第51批: 8 个文档
+2025-07-31 15:32:23,520 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第52批: 8 个文档
+2025-07-31 15:32:24,274 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第53批: 8 个文档
+2025-07-31 15:32:24,863 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第54批: 8 个文档
+2025-07-31 15:32:25,383 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第55批: 8 个文档
+2025-07-31 15:32:26,002 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第56批: 8 个文档
+2025-07-31 15:32:26,562 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第57批: 8 个文档
+2025-07-31 15:32:27,135 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第58批: 8 个文档
+2025-07-31 15:32:27,925 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第59批: 8 个文档
+2025-07-31 15:32:28,493 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第60批: 8 个文档
+2025-07-31 15:32:29,160 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第61批: 8 个文档
+2025-07-31 15:32:29,794 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第62批: 8 个文档
+2025-07-31 15:32:30,368 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第63批: 8 个文档
+2025-07-31 15:32:30,999 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第64批: 8 个文档
+2025-07-31 15:32:31,642 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第65批: 8 个文档
+2025-07-31 15:32:32,166 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第66批: 8 个文档
+2025-07-31 15:32:32,811 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第67批: 8 个文档
+2025-07-31 15:32:33,423 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第68批: 8 个文档
+2025-07-31 15:32:34,053 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第69批: 8 个文档
+2025-07-31 15:32:34,734 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第70批: 8 个文档
+2025-07-31 15:32:35,336 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第71批: 8 个文档
+2025-07-31 15:32:35,901 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第72批: 8 个文档
+2025-07-31 15:32:36,481 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第73批: 8 个文档
+2025-07-31 15:32:37,054 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第74批: 8 个文档
+2025-07-31 15:32:37,642 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第75批: 8 个文档
+2025-07-31 15:32:38,164 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第76批: 8 个文档
+2025-07-31 15:32:38,666 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第77批: 8 个文档
+2025-07-31 15:32:39,117 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第78批: 8 个文档
+2025-07-31 15:32:39,561 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第79批: 8 个文档
+2025-07-31 15:32:40,028 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第80批: 8 个文档
+2025-07-31 15:32:40,515 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第81批: 8 个文档
+2025-07-31 15:32:40,999 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第82批: 8 个文档
+2025-07-31 15:32:41,484 - ai_insurance - INFO - rag_pit_detector.py:217 - 处理第83批: 4 个文档
+2025-07-31 15:32:41,896 - ai_insurance - INFO - rag_pit_detector.py:228 - FAISS向量数据库创建成功
+2025-07-31 15:32:41,927 - ai_insurance - INFO - rag_pit_detector.py:244 - 向量数据库已保存到: data/vector_store/faiss_index
+2025-07-31 15:32:41,928 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 15:49:39,310 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 15:49:41,334 - ai_insurance - INFO - agency_assistant.py:254 - 生成助理建议
+2025-07-31 15:49:41,793 - ai_insurance - INFO - rag_pit_detector.py:378 - 检索到 5 个相关坑点 (查询: 你好 无具体主题..., 相似度范围: 0.466-0.470)
+2025-07-31 15:49:41,793 - ai_insurance - INFO - agency_assistant.py:291 - 检索到 5 个相关坑点
+2025-07-31 15:49:58,747 - ai_insurance - INFO - agency_assistant.py:366 - 建议生成已融入RAG坑点检索结果
+2025-07-31 15:49:58,758 - ai_insurance - INFO - agency_assistant.py:202 - 生成AI用户回应
+2025-07-31 15:50:06,644 - ai_insurance - INFO - agency_assistant.py:383 - 完成智能对话助理分析
+2025-07-31 16:07:06,577 - ai_insurance - INFO - rag_pit_detector.py:157 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 16:07:06,662 - ai_insurance - INFO - rag_pit_detector.py:265 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 16:07:06,662 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 16:07:21,035 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 16:07:24,748 - ai_insurance - INFO - agency_assistant.py:254 - 生成助理建议
+2025-07-31 16:07:25,150 - ai_insurance - INFO - rag_pit_detector.py:378 - 检索到 5 个相关坑点 (查询: 你好 无具体主题..., 相似度范围: 0.466-0.470)
+2025-07-31 16:07:25,150 - ai_insurance - INFO - agency_assistant.py:291 - 检索到 5 个相关坑点
+2025-07-31 16:07:39,755 - ai_insurance - INFO - agency_assistant.py:434 - 建议生成已融入RAG坑点检索结果
+2025-07-31 16:07:39,765 - ai_insurance - INFO - agency_assistant.py:202 - 生成AI用户回应
+2025-07-31 16:07:39,770 - ai_insurance - ERROR - agency_assistant.py:555 - 智能对话助理过程中发生错误: unhashable type: 'slice'
+2025-07-31 16:21:12,038 - ai_insurance - INFO - rag_pit_detector.py:157 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 16:21:12,104 - ai_insurance - INFO - rag_pit_detector.py:265 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 16:21:12,104 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 16:21:21,075 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 16:21:24,585 - ai_insurance - INFO - agency_assistant.py:298 - 生成助理建议
+2025-07-31 16:21:24,978 - ai_insurance - INFO - rag_pit_detector.py:378 - 检索到 5 个相关坑点 (查询: nihk 未知主题..., 相似度范围: 0.477-0.484)
+2025-07-31 16:21:24,978 - ai_insurance - INFO - agency_assistant.py:335 - 检索到 5 个相关坑点
+2025-07-31 16:21:43,952 - ai_insurance - INFO - agency_assistant.py:478 - 建议生成已融入RAG坑点检索结果
+2025-07-31 16:21:43,957 - ai_insurance - INFO - agency_assistant.py:246 - 生成AI用户回应
+2025-07-31 16:21:51,992 - ai_insurance - INFO - agency_assistant.py:507 - 完成智能对话助理分析
+2025-07-31 16:25:31,624 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 16:25:33,860 - ai_insurance - INFO - agency_assistant.py:298 - 生成助理建议
+2025-07-31 16:25:34,186 - ai_insurance - INFO - rag_pit_detector.py:378 - 检索到 5 个相关坑点 (查询: 哦哦，我的意思是你好👋 沟通澄清..., 相似度范围: 0.455-0.464)
+2025-07-31 16:25:34,186 - ai_insurance - INFO - agency_assistant.py:335 - 检索到 5 个相关坑点
+2025-07-31 16:25:53,916 - ai_insurance - INFO - agency_assistant.py:478 - 建议生成已融入RAG坑点检索结果
+2025-07-31 16:25:53,921 - ai_insurance - INFO - agency_assistant.py:246 - 生成AI用户回应
+2025-07-31 16:26:01,955 - ai_insurance - INFO - agency_assistant.py:507 - 完成智能对话助理分析
+2025-07-31 16:32:13,027 - ai_insurance - INFO - rag_pit_detector.py:157 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 16:32:13,115 - ai_insurance - INFO - rag_pit_detector.py:265 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 16:32:13,115 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 16:32:25,656 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 16:32:29,286 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 16:32:29,649 - ai_insurance - INFO - rag_pit_detector.py:378 - 检索到 5 个相关坑点 (查询: 你好 无具体主题..., 相似度范围: 0.466-0.470)
+2025-07-31 16:32:29,650 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-07-31 16:32:45,723 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-07-31 16:32:45,729 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 16:32:51,738 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-07-31 16:33:24,867 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 16:33:27,910 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 16:33:28,220 - ai_insurance - INFO - rag_pit_detector.py:378 - 检索到 5 个相关坑点 (查询: 您能先介绍一下您所在的保险公司和主要提供的保险服务吗 保险公司及服务介绍..., 相似度范围: 0.547-0.557)
+2025-07-31 16:33:28,220 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-07-31 16:33:40,717 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-07-31 16:33:40,730 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 16:33:47,407 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-07-31 16:34:48,162 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 16:34:49,811 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 16:34:50,130 - ai_insurance - INFO - rag_pit_detector.py:378 - 检索到 5 个相关坑点 (查询: 我们什么都做的，主要是百万医疗险。你担心你的健康或者你爸妈的健康么？ 健康险咨询..., 相似度范围: 0.578-0.623)
+2025-07-31 16:34:50,130 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-07-31 16:35:08,085 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-07-31 16:35:08,095 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 16:35:14,948 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析

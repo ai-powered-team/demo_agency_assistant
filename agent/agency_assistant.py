@@ -197,6 +197,47 @@ class AgencyAssistant:
 
         return state
 
+    def _format_suggestions_for_user_prompt(self, suggestions) -> str:
+        """格式化建议用于用户回应生成的prompt"""
+        if not suggestions:
+            return "- 暂无建议"
+        
+        # 处理结构化建议格式
+        if isinstance(suggestions, dict):
+            formatted_suggestions = []
+            
+            # 提取提醒模块的要点
+            reminders = suggestions.get("reminders", {})
+            key_points = reminders.get("key_points", [])
+            potential_risks = reminders.get("potential_risks", [])
+            
+            # 提取提问模块的问题（简化为列表）
+            questions = suggestions.get("questions", [])
+            
+            # 组合关键信息点
+            if key_points:
+                formatted_suggestions.extend([f"关注要点: {point}" for point in key_points[:2]])
+            
+            # 组合风险提醒
+            if potential_risks:
+                formatted_suggestions.extend([f"注意风险: {risk}" for risk in potential_risks[:2]])
+            
+            # 组合提问建议
+            if questions:
+                formatted_suggestions.extend([f"可以询问: {q}" for q in questions[:2]])
+            
+            # 如果没有任何建议，返回默认
+            if not formatted_suggestions:
+                return "- 暂无具体建议"
+            
+            return chr(10).join([f"- {suggestion}" for suggestion in formatted_suggestions[:5]])
+        
+        # 处理旧格式（列表）
+        elif isinstance(suggestions, list):
+            return chr(10).join([f"- {suggestion}" for suggestion in suggestions[:3]])
+        
+        return "- 建议格式不正确"
+
     async def _generate_user_response(self, state: AgencyAssistantState) -> AgencyAssistantState:
         """生成AI用户回应节点"""
         logger.info("生成AI用户回应")
@@ -215,7 +256,7 @@ class AgencyAssistant:
 - 你的当下需求：{intent_analysis.get('用户当下需求', '未知')}
 
 助理建议（供参考，但要自然表达，不要生硬照搬）：
-{chr(10).join([f"- {suggestion}" for suggestion in suggestions[:3]]) if suggestions else "- 暂无建议"}
+{self._format_suggestions_for_user_prompt(suggestions)}
 
 请根据以上分析和建议，自然地回应经纪人，体现出真实用户的疑虑和需求。"""
 
@@ -319,47 +360,91 @@ class AgencyAssistant:
 
             suggestions_prompt = f"""{enhanced_prompt}
 
-请生成针对性的建议，帮助AI用户更好地与经纪人沟通，包括：
-1. 可以进一步询问的问题
-2. 需要关注的要点  
-3. 可能的风险提醒 (特别关注上述坑点警告)
-4. 合适的回应策略
-5. 基于用户当下需求的具体行动
+请按照以下结构生成针对性的建议，帮助AI用户更好地与经纪人沟通：
 
-返回JSON格式的建议列表：
-{{"suggestions": ["建议1", "建议2", "建议3", "建议4", "建议5"]}}"""
+## 提醒模块（解读经纪人的话）
+1. **信息要点**: 分析经纪人话语中涉及的关键信息点
+2. **潜在坑点**: 识别可能存在的风险点或误导性信息
+
+## 提问模块（帮助用户给出下一步提问）
+仅基于当前经纪人话语，生成3个不同类型的提问建议：
+
+1. **澄清式提问**: 对模糊表述要求进一步说明
+2. **深挖式提问**: 在介绍基础上深入了解细节  
+3. **风险揭示提问**: 针对坑点进行直接询问
+
+请返回JSON格式：
+{{
+  "reminders": {{
+    "key_points": ["要点1", "要点2"],
+    "potential_risks": ["风险点1", "风险点2"]
+  }},
+  "questions": ["提问1", "提问2", "提问3"]
+}}"""
 
             messages = [
-                SystemMessage(content="你是保险领域的专业顾问，具备丰富的风险识别经验，为用户提供专业的对话建议和风险提醒。"),
+                SystemMessage(content="""你是保险领域的专业顾问，具备丰富的风险识别经验。你的任务是为AI扮演的保险用户提供结构化的对话建议，帮助用户更好地与保险经纪人沟通。
+
+你需要分析经纪人的话语，识别关键信息点和潜在风险，然后为用户提供不同类型的提问建议。请严格按照JSON格式返回结果。"""),
                 HumanMessage(content=suggestions_prompt)
             ]
             
             response = await self.deepseek.ainvoke(messages)
             response_text = str(response.content).strip()
             
-            # 解析建议
+            # 解析结构化建议
             try:
                 if "```json" in response_text:
                     response_text = response_text.split("```json")[1].split("```")[0].strip()
                 suggestions_data = json.loads(response_text)
-                suggestions = suggestions_data.get("suggestions", [])
-            except:
-                # 如果JSON解析失败，生成包含坑点信息的默认建议
+                
+                # 提取提醒模块
+                reminders = suggestions_data.get("reminders", {})
+                key_points = reminders.get("key_points", [])
+                potential_risks = reminders.get("potential_risks", [])
+                
+                # 提取提问模块（简化为列表）
+                questions = suggestions_data.get("questions", [])
+                
+                # 构建结构化建议
+                structured_suggestions = {
+                    "reminders": {
+                        "key_points": key_points,
+                        "potential_risks": potential_risks
+                    },
+                    "questions": questions
+                }
+                
+                state["suggestions"] = structured_suggestions
+                
+            except Exception as e:
+                logger.error(f"JSON解析失败: {e}")
+                # 如果JSON解析失败，生成包含坑点信息的默认结构化建议
                 current_topic = intent_analysis.get("讨论主题", "保险咨询")
-                suggestions = [
-                    f"可以详细了解{current_topic}的具体细节",
-                    "询问相关费用和保费计算方式", 
-                    "了解理赔流程和条件",
-                    "比较不同产品的优劣势",
-                    "确认保障范围是否符合需求"
+                
+                default_reminders = {
+                    "key_points": [
+                        f"经纪人提到了{current_topic}相关内容",
+                        "需要关注具体的保障条款和费用"
+                    ],
+                    "potential_risks": []
+                }
+                
+                default_questions = [
+                    f"可以详细说明一下{current_topic}的具体内容吗？",
+                    "能否介绍一下相关的理赔流程和条件？",
+                    "除了这个方案，还有其他类似的选择吗？"
                 ]
                 
-                # 如果有坑点警告，添加风险提醒建议
+                # 如果有坑点警告，添加到风险提醒中
                 if pit_warnings:
-                    risk_suggestion = "⚠️ 注意经纪人话语中可能存在的误导风险，建议仔细核实相关信息"
-                    suggestions.insert(0, risk_suggestion)
-            
-            state["suggestions"] = suggestions[:5]  # 最多5个建议
+                    default_reminders["potential_risks"].append("经纪人话语中可能存在误导性信息")
+                    default_questions[2] = "关于刚才提到的内容，有没有什么需要特别注意的风险点？"
+                
+                state["suggestions"] = {
+                    "reminders": default_reminders,
+                    "questions": default_questions
+                }
             
             # 记录RAG增强信息
             if pit_warnings:
@@ -367,14 +452,24 @@ class AgencyAssistant:
             
         except Exception as e:
             logger.error(f"生成建议失败: {e}")
-            # 设置默认建议
-            state["suggestions"] = [
-                "可以询问更多产品细节",
-                "了解保费和保障范围",
-                "确认理赔相关事项",
-                "注意识别可能的销售误导",
-                "建议多方比较后再决定"
-            ]
+            # 设置默认结构化建议
+            state["suggestions"] = {
+                "reminders": {
+                    "key_points": [
+                        "经纪人介绍了保险相关内容",
+                        "需要仔细了解产品详情"
+                    ],
+                    "potential_risks": [
+                        "可能存在销售误导风险",
+                        "需要核实产品信息的真实性"
+                    ]
+                },
+                "questions": [
+                    "可以详细说明一下这个产品的核心特点吗？",
+                    "能否介绍一下具体的理赔流程和条件？",
+                    "这个产品有什么需要特别注意的限制或风险吗？"
+                ]
+            }
 
         return state
 
