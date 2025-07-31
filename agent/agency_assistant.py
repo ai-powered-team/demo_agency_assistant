@@ -20,6 +20,7 @@ from util import (
     ThinkingResponse, AnswerResponse, ErrorResponse,
     ChatMessage, AgentResponse
 )
+from .rag_pit_detector import get_pit_retriever
 
 
 class AgencyAssistantState(TypedDict):
@@ -57,6 +58,14 @@ class AgencyAssistant:
             model="qwen-plus",
             temperature=0.3
         )
+        
+        # 初始化RAG坑点检索器
+        try:
+            self.pit_retriever = get_pit_retriever()
+            logger.info("RAG坑点检索器初始化成功")
+        except Exception as e:
+            logger.error(f"RAG坑点检索器初始化失败: {e}")
+            self.pit_retriever = None
         
         # 用户角色提示
         self.user_prompt = """你是一个考虑购买保险的普通用户，对保险知识了解有限，关心保费、保障范围、理赔等问题。
@@ -241,7 +250,7 @@ class AgencyAssistant:
         return state
 
     async def _generate_suggestions(self, state: AgencyAssistantState) -> AgencyAssistantState:
-        """生成助理建议节点"""
+        """生成助理建议节点 - 集成RAG坑点检索"""
         logger.info("生成助理建议")
 
         intent_analysis = state.get("intent_analysis", {})
@@ -256,20 +265,64 @@ class AgencyAssistant:
                 context_messages.append(f"{role}: {msg['content']}")
             context = "\n".join(context_messages)
 
-            # 基于意图分析生成建议
-            suggestions_prompt = f"""根据经纪人话语和意图分析，为AI扮演的保险用户提供3-5个实用的对话建议。
+            # RAG检索相关坑点
+            pit_warnings = ""
+            if self.pit_retriever:
+                try:
+                    # 构建检索查询：结合经纪人话语和意图信息
+                    search_query = broker_input
+                    if intent_analysis:
+                        topic = intent_analysis.get("讨论主题", "")
+                        keywords = intent_analysis.get("关键词", [])
+                        if topic:
+                            search_query += f" {topic}"
+                        if keywords:
+                            search_query += f" {' '.join(keywords)}"
+                    
+                    # 执行RAG检索 - 使用更宽松的参数
+                    pit_results = self.pit_retriever.search(
+                        search_query, 
+                        top_k=5, 
+                        similarity_threshold=0.2  # 更低的阈值
+                    )
+                    
+                    if pit_results:
+                        pit_warnings = self.pit_retriever.format_pit_warnings(pit_results)
+                        logger.info(f"检索到 {len(pit_results)} 个相关坑点")
+                    else:
+                        logger.info("未检索到相关坑点")
+                        
+                except Exception as e:
+                    logger.error(f"RAG检索失败: {e}")
+                    pit_warnings = ""
+
+            # 构建增强的建议生成prompt
+            base_prompt = f"""根据经纪人话语和意图分析，为AI扮演的保险用户提供3-5个实用的对话建议。
 
 经纪人当前话语: {broker_input}
 
 对话历史上下文:
 {context}
 
-意图分析结果: {json.dumps(intent_analysis, ensure_ascii=False, indent=2)}
+意图分析结果: {json.dumps(intent_analysis, ensure_ascii=False, indent=2)}"""
+
+            # 如果有坑点警告，添加到prompt中
+            if pit_warnings:
+                enhanced_prompt = f"""{base_prompt}
+
+⚠️ 相关风险提示 (基于保险行业坑点数据库):
+{pit_warnings}
+
+请特别注意上述风险提示，在生成建议时融入相关的风险防范意识。"""
+            else:
+                enhanced_prompt = base_prompt
+
+            suggestions_prompt = f"""{enhanced_prompt}
 
 请生成针对性的建议，帮助AI用户更好地与经纪人沟通，包括：
 1. 可以进一步询问的问题
-2. 需要关注的要点
-3. 可能的风险提醒
+2. 需要关注的要点  
+3. 可能的风险提醒 (特别关注上述坑点警告)
 4. 合适的回应策略
 5. 基于用户当下需求的具体行动
 
@@ -277,7 +330,7 @@ class AgencyAssistant:
 {{"suggestions": ["建议1", "建议2", "建议3", "建议4", "建议5"]}}"""
 
             messages = [
-                SystemMessage(content="你是保险领域的专业顾问，为用户提供专业的对话建议。"),
+                SystemMessage(content="你是保险领域的专业顾问，具备丰富的风险识别经验，为用户提供专业的对话建议和风险提醒。"),
                 HumanMessage(content=suggestions_prompt)
             ]
             
@@ -291,7 +344,7 @@ class AgencyAssistant:
                 suggestions_data = json.loads(response_text)
                 suggestions = suggestions_data.get("suggestions", [])
             except:
-                # 如果JSON解析失败，生成默认建议
+                # 如果JSON解析失败，生成包含坑点信息的默认建议
                 current_topic = intent_analysis.get("讨论主题", "保险咨询")
                 suggestions = [
                     f"可以详细了解{current_topic}的具体细节",
@@ -300,8 +353,17 @@ class AgencyAssistant:
                     "比较不同产品的优劣势",
                     "确认保障范围是否符合需求"
                 ]
+                
+                # 如果有坑点警告，添加风险提醒建议
+                if pit_warnings:
+                    risk_suggestion = "⚠️ 注意经纪人话语中可能存在的误导风险，建议仔细核实相关信息"
+                    suggestions.insert(0, risk_suggestion)
             
             state["suggestions"] = suggestions[:5]  # 最多5个建议
+            
+            # 记录RAG增强信息
+            if pit_warnings:
+                logger.info("建议生成已融入RAG坑点检索结果")
             
         except Exception as e:
             logger.error(f"生成建议失败: {e}")
@@ -309,7 +371,9 @@ class AgencyAssistant:
             state["suggestions"] = [
                 "可以询问更多产品细节",
                 "了解保费和保障范围",
-                "确认理赔相关事项"
+                "确认理赔相关事项",
+                "注意识别可能的销售误导",
+                "建议多方比较后再决定"
             ]
 
         return state

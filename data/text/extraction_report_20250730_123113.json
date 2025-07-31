@@ -1,0 +1,14 @@
+{
+  "processing_time": "2025-07-30T12:31:13.748582",
+  "total_articles": 111,
+  "success_count": 110,
+  "failed_count": 1,
+  "success_rate": "99.1%",
+  "failed_urls": [
+    {
+      "url": "https://www.shenlanbao.com/zhinan/1742377779539132416",
+      "error": "404 Client Error: Not Found for url: https://www.shenlanbao.com/zhinan/1742377779539132416",
+      "timestamp": "2025-07-30T12:28:00.682262"
+    }
+  ]
+}

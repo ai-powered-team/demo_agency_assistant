@@ -23,6 +23,7 @@ AI 扮演保险用户，真人扮演保险经纪人，系统提供实时意图�
     user                    - 查看最新AI用户回应
     reset                   - 重置对话会话
     status                  - 显示当前状态
+    test_rag                - 测试RAG坑点检索功能
     quit                    - 退出程序
 
 工作流程:
@@ -356,6 +357,102 @@ class AgencyAssistantTester:
         self.latest_user_response = None
         print(f"{Fore.GREEN}✅ 会话已重置，新会话ID: {self.current_session_id}{Style.RESET_ALL}")
 
+    async def test_rag_functionality(self):
+        """测试RAG坑点检索功能"""
+        print(f"{Fore.CYAN}🔍 开始测试RAG坑点检索功能...{Style.RESET_ALL}")
+        
+        if not self.assistant or not hasattr(self.assistant, 'pit_retriever') or not self.assistant.pit_retriever:
+            print(f"{Fore.RED}❌ RAG坑点检索器未初始化{Style.RESET_ALL}")
+            print(f"{Fore.YELLOW}💡 请确保已运行数据预处理脚本: python tools/preprocess_pits_data.py{Style.RESET_ALL}")
+            return
+        
+        # 测试查询列表
+        test_queries = [
+            "保费上涨",
+            "费率比较",
+            "首年便宜",
+            "保障责任",
+            "理赔条件",
+            "医疗险便宜",
+            "重疾险费用"
+        ]
+        
+        print(f"{Fore.CYAN}📊 将测试以下查询:{Style.RESET_ALL}")
+        for i, query in enumerate(test_queries, 1):
+            print(f"  {i}. {query}")
+        
+        print(f"\n{Fore.BLUE}🔍 开始执行检索测试...{Style.RESET_ALL}")
+        
+        try:
+            for i, query in enumerate(test_queries, 1):
+                print(f"\n{Fore.YELLOW}{'='*50}{Style.RESET_ALL}")
+                print(f"{Fore.YELLOW}测试 {i}/{len(test_queries)}: 查询 '{query}'{Style.RESET_ALL}")
+                print(f"{Fore.YELLOW}{'='*50}{Style.RESET_ALL}")
+                
+                # 执行检索 - 使用更宽松的参数进行测试
+                results = self.assistant.pit_retriever.search(
+                    query, 
+                    top_k=5, 
+                    similarity_threshold=0.1  # 非常低的阈值用于测试
+                )
+                
+                if results:
+                    print(f"{Fore.GREEN}✅ 检索到 {len(results)} 个相关坑点:{Style.RESET_ALL}")
+                    
+                    for j, result in enumerate(results, 1):
+                        similarity = result.get("similarity", 0)
+                        category = result.get("category", "未分类")
+                        title = result.get("title", "未知标题")
+                        reason = result.get("reason", "")
+                        
+                        print(f"\n{Fore.CYAN}  {j}. 【{category}】{title}{Style.RESET_ALL}")
+                        print(f"     相似度: {similarity:.3f}")
+                        if reason:
+                            print(f"     风险提示: {reason[:100]}{'...' if len(reason) > 100 else ''}")
+                    
+                    # 测试格式化功能
+                    formatted_warnings = self.assistant.pit_retriever.format_pit_warnings(results)
+                    if formatted_warnings:
+                        print(f"\n{Fore.MAGENTA}📝 格式化警告信息:{Style.RESET_ALL}")
+                        print(formatted_warnings[:300] + "..." if len(formatted_warnings) > 300 else formatted_warnings)
+                else:
+                    print(f"{Fore.YELLOW}⚠️  未找到相关坑点{Style.RESET_ALL}")
+        
+        except Exception as e:
+            print(f"{Fore.RED}❌ RAG测试失败: {e}{Style.RESET_ALL}")
+            return
+        
+        print(f"\n{Fore.GREEN}{'='*50}{Style.RESET_ALL}")
+        print(f"{Fore.GREEN}🎉 RAG功能测试完成！{Style.RESET_ALL}")
+        print(f"{Fore.GREEN}{'='*50}{Style.RESET_ALL}")
+        
+        # 测试集成到建议生成的效果
+        print(f"\n{Fore.CYAN}🔗 测试RAG集成到建议生成...{Style.RESET_ALL}")
+        test_broker_message = "我们这款重疾险首年保费只要99元，性价比很高！"
+        print(f"{Fore.BLUE}模拟经纪人话语: {test_broker_message}{Style.RESET_ALL}")
+        
+        try:
+            # 创建测试请求
+            request: AssistantRequest = {
+                "user_id": self.current_user_id,
+                "session_id": self.current_session_id,
+                "broker_input": test_broker_message,
+                "conversation_history": []
+            }
+            
+            print(f"{Fore.BLUE}🔄 执行完整助理分析（包含RAG增强）...{Style.RESET_ALL}")
+            
+            async for response in self.assistant.assist_conversation(request):
+                if response.get("type") == "suggestions":
+                    suggestions = response.get("data", {}).get("suggestions", [])
+                    print(f"\n{Fore.GREEN}💡 RAG增强的建议:{Style.RESET_ALL}")
+                    for j, suggestion in enumerate(suggestions, 1):
+                        print(f"  {j}. {suggestion}")
+                    break
+            
+        except Exception as e:
+            print(f"{Fore.RED}❌ RAG集成测试失败: {e}{Style.RESET_ALL}")
+
     async def broker_speak(self, broker_message: str):
         """经纪人发言，触发智能助理分析"""
         if not self.assistant:
@@ -446,6 +543,9 @@ class AgencyAssistantTester:
 
                     elif command == "reset":
                         self.reset_session()
+
+                    elif command == "test_rag":
+                        await self.test_rag_functionality()
 
                     elif command == "broker":
                         if len(parts) < 2:

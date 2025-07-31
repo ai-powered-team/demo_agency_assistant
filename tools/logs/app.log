@@ -1,0 +1,508 @@
+2025-07-30 17:03:38,385 - ai_insurance - INFO - rag_pit_detector.py:61 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 17:03:38,390 - ai_insurance - INFO - rag_pit_detector.py:95 - 成功加载 660 条保险坑点数据
+2025-07-30 17:03:38,392 - ai_insurance - ERROR - rag_pit_detector.py:129 - 初始化嵌入模型失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-07-30 17:03:38,398 - ai_insurance - ERROR - rag_pit_detector.py:138 - 本地嵌入模型初始化也失败: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
+2025-07-30 17:03:38,398 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`.
+2025-07-30 17:07:12,961 - ai_insurance - INFO - rag_pit_detector.py:61 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 17:07:12,967 - ai_insurance - INFO - rag_pit_detector.py:95 - 成功加载 660 条保险坑点数据
+2025-07-30 17:07:12,969 - ai_insurance - ERROR - rag_pit_detector.py:129 - 初始化嵌入模型失败: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-07-30 17:12:04,837 - ai_insurance - INFO - rag_pit_detector.py:136 - 回退到本地sentence-transformers模型
+2025-07-30 17:12:04,844 - ai_insurance - WARNING - rag_pit_detector.py:191 - 向量数据库文件不存在: data/vector_store/faiss_index
+2025-07-30 17:12:04,845 - ai_insurance - INFO - rag_pit_detector.py:143 - 开始创建向量数据库
+2025-07-30 17:12:04,900 - ai_insurance - INFO - rag_pit_detector.py:157 - 文档分割完成，共 660 个文档块
+2025-07-30 17:12:21,061 - ai_insurance - INFO - rag_pit_detector.py:165 - FAISS向量数据库创建成功
+2025-07-30 17:12:21,078 - ai_insurance - INFO - rag_pit_detector.py:179 - 向量数据库已保存到: data/vector_store/faiss_index
+2025-07-30 17:12:21,082 - ai_insurance - INFO - rag_pit_detector.py:200 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 17:24:23,525 - ai_insurance - INFO - rag_pit_detector.py:61 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 17:24:23,555 - ai_insurance - INFO - rag_pit_detector.py:95 - 成功加载 660 条保险坑点数据
+2025-07-30 17:24:23,690 - ai_insurance - ERROR - rag_pit_detector.py:129 - 初始化阿里云嵌入模型失败: 1 validation error for DashScopeEmbeddings
+  Value error, Did not find dashscope_api_key, please add an environment variable `DASHSCOPE_API_KEY` which contains it, or pass `dashscope_api_key` as a named parameter. [type=value_error, input_value={'model': 'text-embedding...'dashscope_api_key': ''}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/value_error
+2025-07-30 17:28:55,772 - ai_insurance - INFO - rag_pit_detector.py:136 - 回退到本地sentence-transformers模型
+2025-07-30 17:28:57,528 - ai_insurance - INFO - rag_pit_detector.py:200 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 17:32:46,529 - ai_insurance - INFO - rag_pit_detector.py:61 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 17:32:46,536 - ai_insurance - INFO - rag_pit_detector.py:95 - 成功加载 660 条保险坑点数据
+2025-07-30 17:32:46,600 - ai_insurance - INFO - rag_pit_detector.py:127 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 17:32:46,752 - ai_insurance - INFO - rag_pit_detector.py:200 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 17:32:57,040 - ai_insurance - INFO - rag_pit_detector.py:143 - 开始创建向量数据库
+2025-07-30 17:32:57,065 - ai_insurance - INFO - rag_pit_detector.py:157 - 文档分割完成，共 660 个文档块
+2025-07-30 17:32:58,882 - ai_insurance - ERROR - rag_pit_detector.py:168 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 17:32:58,882 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 17:41:05,040 - ai_insurance - INFO - rag_pit_detector.py:61 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 17:41:05,048 - ai_insurance - INFO - rag_pit_detector.py:95 - 成功加载 660 条保险坑点数据
+2025-07-30 17:41:05,104 - ai_insurance - INFO - rag_pit_detector.py:127 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 17:41:06,373 - ai_insurance - INFO - rag_pit_detector.py:201 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 17:44:22,088 - ai_insurance - INFO - rag_pit_detector.py:143 - 开始创建向量数据库
+2025-07-30 17:44:22,202 - ai_insurance - INFO - rag_pit_detector.py:158 - 文档分割完成，共 660 个文档块
+2025-07-30 17:44:24,936 - ai_insurance - ERROR - rag_pit_detector.py:169 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 17:44:24,936 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:05:55,457 - ai_insurance - INFO - rag_pit_detector.py:61 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 18:05:55,462 - ai_insurance - INFO - rag_pit_detector.py:95 - 成功加载 660 条保险坑点数据
+2025-07-30 18:05:55,522 - ai_insurance - INFO - rag_pit_detector.py:127 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 18:05:56,780 - ai_insurance - INFO - rag_pit_detector.py:201 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 18:13:43,426 - ai_insurance - INFO - rag_pit_detector.py:103 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 18:13:43,441 - ai_insurance - INFO - rag_pit_detector.py:137 - 成功加载 660 条保险坑点数据
+2025-07-30 18:13:43,502 - ai_insurance - INFO - rag_pit_detector.py:169 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 18:13:44,699 - ai_insurance - INFO - rag_pit_detector.py:274 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 18:13:58,788 - ai_insurance - INFO - rag_pit_detector.py:185 - 开始创建向量数据库
+2025-07-30 18:13:58,828 - ai_insurance - INFO - rag_pit_detector.py:201 - 文档分割完成，共 660 个文档块
+2025-07-30 18:13:58,838 - ai_insurance - INFO - rag_pit_detector.py:228 - 文档清理完成，有效文档 660 个
+2025-07-30 18:14:01,028 - ai_insurance - ERROR - rag_pit_detector.py:242 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:14:01,028 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:16:43,101 - ai_insurance - INFO - rag_pit_detector.py:88 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 18:16:43,110 - ai_insurance - INFO - rag_pit_detector.py:122 - 成功加载 660 条保险坑点数据
+2025-07-30 18:16:43,180 - ai_insurance - INFO - rag_pit_detector.py:154 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 18:16:43,400 - ai_insurance - INFO - rag_pit_detector.py:266 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 18:17:06,599 - ai_insurance - INFO - rag_pit_detector.py:88 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 18:17:06,609 - ai_insurance - INFO - rag_pit_detector.py:122 - 成功加载 660 条保险坑点数据
+2025-07-30 18:17:06,671 - ai_insurance - INFO - rag_pit_detector.py:154 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 18:17:06,886 - ai_insurance - INFO - rag_pit_detector.py:266 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 18:17:08,481 - ai_insurance - INFO - rag_pit_detector.py:170 - 开始创建向量数据库
+2025-07-30 18:17:08,513 - ai_insurance - INFO - rag_pit_detector.py:186 - 文档分割完成，共 660 个文档块
+2025-07-30 18:17:08,513 - ai_insurance - INFO - rag_pit_detector.py:189 - 检查文档编码...
+2025-07-30 18:17:08,513 - ai_insurance - INFO - rag_pit_detector.py:202 - 开始创建向量嵌入...
+2025-07-30 18:17:09,890 - ai_insurance - ERROR - rag_pit_detector.py:210 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:17:09,890 - ai_insurance - ERROR - rag_pit_detector.py:213 - 这是一个字符编码问题，请检查数据中是否包含特殊字符
+2025-07-30 18:17:09,890 - ai_insurance - INFO - rag_pit_detector.py:215 - 尝试清理所有文档内容...
+2025-07-30 18:17:09,894 - ai_insurance - INFO - rag_pit_detector.py:224 - 重试创建向量数据库...
+2025-07-30 18:17:10,009 - ai_insurance - ERROR - rag_pit_detector.py:232 - 重试后仍然失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:17:10,009 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:22:18,451 - ai_insurance - INFO - rag_pit_detector.py:105 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 18:22:18,468 - ai_insurance - INFO - rag_pit_detector.py:139 - 成功加载 660 条保险坑点数据
+2025-07-30 18:22:18,535 - ai_insurance - INFO - rag_pit_detector.py:171 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 18:22:19,761 - ai_insurance - INFO - rag_pit_detector.py:283 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 18:22:31,768 - ai_insurance - INFO - rag_pit_detector.py:187 - 开始创建向量数据库
+2025-07-30 18:22:31,810 - ai_insurance - INFO - rag_pit_detector.py:203 - 文档分割完成，共 660 个文档块
+2025-07-30 18:22:31,811 - ai_insurance - INFO - rag_pit_detector.py:206 - 检查文档编码...
+2025-07-30 18:22:31,811 - ai_insurance - INFO - rag_pit_detector.py:219 - 开始创建向量嵌入...
+2025-07-30 18:22:34,016 - ai_insurance - ERROR - rag_pit_detector.py:227 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:22:34,016 - ai_insurance - ERROR - rag_pit_detector.py:230 - 这是一个字符编码问题，请检查数据中是否包含特殊字符
+2025-07-30 18:22:34,017 - ai_insurance - INFO - rag_pit_detector.py:232 - 尝试清理所有文档内容...
+2025-07-30 18:22:34,020 - ai_insurance - INFO - rag_pit_detector.py:241 - 重试创建向量数据库...
+2025-07-30 18:22:34,122 - ai_insurance - ERROR - rag_pit_detector.py:249 - 重试后仍然失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:22:34,122 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:28:33,240 - ai_insurance - INFO - rag_pit_detector.py:88 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 18:28:33,247 - ai_insurance - ERROR - rag_pit_detector.py:126 - 加载保险坑点数据失败: name 'clean_text' is not defined
+2025-07-30 18:28:33,247 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: name 'clean_text' is not defined
+2025-07-30 18:30:41,948 - ai_insurance - INFO - rag_pit_detector.py:89 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 18:30:41,961 - ai_insurance - INFO - rag_pit_detector.py:123 - 成功加载 660 条保险坑点数据
+2025-07-30 18:30:42,025 - ai_insurance - INFO - rag_pit_detector.py:155 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 18:30:43,883 - ai_insurance - INFO - rag_pit_detector.py:267 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 18:30:55,095 - ai_insurance - INFO - rag_pit_detector.py:171 - 开始创建向量数据库
+2025-07-30 18:30:55,139 - ai_insurance - INFO - rag_pit_detector.py:187 - 文档分割完成，共 660 个文档块
+2025-07-30 18:30:55,140 - ai_insurance - INFO - rag_pit_detector.py:190 - 检查文档编码...
+2025-07-30 18:30:55,140 - ai_insurance - INFO - rag_pit_detector.py:203 - 开始创建向量嵌入...
+2025-07-30 18:30:56,217 - ai_insurance - ERROR - rag_pit_detector.py:211 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:30:56,217 - ai_insurance - ERROR - rag_pit_detector.py:214 - 这是一个字符编码问题，请检查数据中是否包含特殊字符
+2025-07-30 18:30:56,217 - ai_insurance - INFO - rag_pit_detector.py:216 - 尝试清理所有文档内容...
+2025-07-30 18:30:56,220 - ai_insurance - INFO - rag_pit_detector.py:225 - 重试创建向量数据库...
+2025-07-30 18:30:56,327 - ai_insurance - ERROR - rag_pit_detector.py:233 - 重试后仍然失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:30:56,327 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:34:28,452 - ai_insurance - INFO - rag_pit_detector.py:95 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 18:34:28,473 - ai_insurance - INFO - rag_pit_detector.py:129 - 成功加载 660 条保险坑点数据
+2025-07-30 18:34:28,539 - ai_insurance - INFO - rag_pit_detector.py:161 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 18:34:29,861 - ai_insurance - INFO - rag_pit_detector.py:235 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 18:34:43,865 - ai_insurance - INFO - rag_pit_detector.py:177 - 开始创建向量数据库
+2025-07-30 18:34:43,896 - ai_insurance - INFO - rag_pit_detector.py:192 - 文档分割完成，共 660 个文档块
+2025-07-30 18:34:45,933 - ai_insurance - ERROR - rag_pit_detector.py:203 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:34:45,933 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:39:06,288 - ai_insurance - INFO - rag_pit_detector.py:110 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 18:39:06,310 - ai_insurance - INFO - rag_pit_detector.py:144 - 成功加载 660 条保险坑点数据
+2025-07-30 18:59:31,384 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 18:59:31,396 - ai_insurance - INFO - rag_pit_detector.py:121 - 成功加载 660 条保险坑点数据
+2025-07-30 18:59:31,457 - ai_insurance - INFO - rag_pit_detector.py:153 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 18:59:32,493 - ai_insurance - INFO - rag_pit_detector.py:270 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 18:59:35,957 - ai_insurance - INFO - rag_pit_detector.py:202 - 开始创建向量数据库
+2025-07-30 18:59:35,958 - ai_insurance - INFO - rag_pit_detector.py:207 - 清理文档内容中的特殊字符...
+2025-07-30 18:59:36,001 - ai_insurance - INFO - rag_pit_detector.py:220 - 文档分割完成，共 660 个文档块
+2025-07-30 18:59:37,895 - ai_insurance - ERROR - rag_pit_detector.py:234 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 18:59:37,895 - ai_insurance - INFO - rag_pit_detector.py:237 - 第一个文档内容示例: 分类: 产品比较与费率相关坑点
+标题: 费率与保障责任的不对等比较
+示例: 用自家保障差但便宜的产品去对比别家保障好但贵的产品。
+原因: 进行"田忌赛马"式的误导，让客户以为占了便宜，实际保障打了折扣...
+2025-07-30 18:59:37,895 - ai_insurance - INFO - rag_pit_detector.py:238 - 第一个文档元数据: {'category': '产品比较与费率相关坑点', '编号': 1, '标题': '费率与保障责任的不对等比较', '坑点原因': '进行"田忌赛马"式的误导，让客户以为占了便宜，实际保障打了折扣。', 'source': 'insurance_pits_merged.json'}
+2025-07-30 18:59:37,895 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 19:00:55,773 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:00:55,789 - ai_insurance - INFO - rag_pit_detector.py:121 - 成功加载 660 条保险坑点数据
+2025-07-30 19:00:55,855 - ai_insurance - INFO - rag_pit_detector.py:153 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:00:55,983 - ai_insurance - INFO - rag_pit_detector.py:270 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:00:57,598 - ai_insurance - INFO - rag_pit_detector.py:202 - 开始创建向量数据库
+2025-07-30 19:00:57,599 - ai_insurance - INFO - rag_pit_detector.py:207 - 清理文档内容中的特殊字符...
+2025-07-30 19:00:57,639 - ai_insurance - INFO - rag_pit_detector.py:220 - 文档分割完成，共 660 个文档块
+2025-07-30 19:00:57,901 - ai_insurance - ERROR - rag_pit_detector.py:234 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 19:00:57,901 - ai_insurance - INFO - rag_pit_detector.py:237 - 第一个文档内容示例: 分类: 产品比较与费率相关坑点
+标题: 费率与保障责任的不对等比较
+示例: 用自家保障差但便宜的产品去对比别家保障好但贵的产品。
+原因: 进行"田忌赛马"式的误导，让客户以为占了便宜，实际保障打了折扣...
+2025-07-30 19:00:57,901 - ai_insurance - INFO - rag_pit_detector.py:238 - 第一个文档元数据: {'category': '产品比较与费率相关坑点', '编号': 1, '标题': '费率与保障责任的不对等比较', '坑点原因': '进行"田忌赛马"式的误导，让客户以为占了便宜，实际保障打了折扣。', 'source': 'insurance_pits_merged.json'}
+2025-07-30 19:00:57,901 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 19:03:47,299 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:03:47,313 - ai_insurance - INFO - rag_pit_detector.py:121 - 成功加载 660 条保险坑点数据
+2025-07-30 19:03:47,371 - ai_insurance - INFO - rag_pit_detector.py:153 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:03:47,503 - ai_insurance - INFO - rag_pit_detector.py:263 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:03:49,350 - ai_insurance - INFO - rag_pit_detector.py:202 - 开始创建向量数据库
+2025-07-30 19:03:49,352 - ai_insurance - INFO - rag_pit_detector.py:207 - 清理文档内容中的特殊字符...
+2025-07-30 19:03:49,400 - ai_insurance - INFO - rag_pit_detector.py:220 - 文档分割完成，共 660 个文档块
+2025-07-30 19:03:50,030 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 19:04:18,255 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:04:18,270 - ai_insurance - INFO - rag_pit_detector.py:121 - 成功加载 660 条保险坑点数据
+2025-07-30 19:04:18,320 - ai_insurance - INFO - rag_pit_detector.py:153 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:04:18,432 - ai_insurance - INFO - rag_pit_detector.py:265 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:04:19,534 - ai_insurance - INFO - rag_pit_detector.py:204 - 开始创建向量数据库
+2025-07-30 19:04:19,535 - ai_insurance - INFO - rag_pit_detector.py:209 - 清理文档内容中的特殊字符...
+2025-07-30 19:04:19,592 - ai_insurance - INFO - rag_pit_detector.py:222 - 文档分割完成，共 660 个文档块
+2025-07-30 19:04:19,802 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 19:05:54,082 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:05:54,097 - ai_insurance - INFO - rag_pit_detector.py:121 - 成功加载 660 条保险坑点数据
+2025-07-30 19:05:54,151 - ai_insurance - INFO - rag_pit_detector.py:153 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:05:54,266 - ai_insurance - INFO - rag_pit_detector.py:263 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:05:55,308 - ai_insurance - INFO - rag_pit_detector.py:202 - 开始创建向量数据库
+2025-07-30 19:05:55,309 - ai_insurance - INFO - rag_pit_detector.py:207 - 清理文档内容中的特殊字符...
+2025-07-30 19:05:55,349 - ai_insurance - INFO - rag_pit_detector.py:220 - 文档分割完成，共 660 个文档块
+2025-07-30 19:05:55,580 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 19:06:59,906 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:06:59,923 - ai_insurance - INFO - rag_pit_detector.py:121 - 成功加载 660 条保险坑点数据
+2025-07-30 19:06:59,977 - ai_insurance - INFO - rag_pit_detector.py:153 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:07:00,106 - ai_insurance - INFO - rag_pit_detector.py:263 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:07:13,891 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:07:13,909 - ai_insurance - INFO - rag_pit_detector.py:122 - 成功加载 660 条保险坑点数据
+2025-07-30 19:07:13,984 - ai_insurance - INFO - rag_pit_detector.py:154 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:07:14,104 - ai_insurance - INFO - rag_pit_detector.py:264 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:07:15,575 - ai_insurance - INFO - rag_pit_detector.py:203 - 开始创建向量数据库
+2025-07-30 19:07:15,576 - ai_insurance - INFO - rag_pit_detector.py:208 - 清理文档内容中的特殊字符...
+2025-07-30 19:07:15,623 - ai_insurance - INFO - rag_pit_detector.py:221 - 文档分割完成，共 660 个文档块
+2025-07-30 19:07:16,262 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 19:07:43,521 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:07:43,540 - ai_insurance - INFO - rag_pit_detector.py:121 - 成功加载 660 条保险坑点数据
+2025-07-30 19:07:43,588 - ai_insurance - INFO - rag_pit_detector.py:150 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:07:43,690 - ai_insurance - INFO - rag_pit_detector.py:260 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:07:44,770 - ai_insurance - INFO - rag_pit_detector.py:199 - 开始创建向量数据库
+2025-07-30 19:07:44,771 - ai_insurance - INFO - rag_pit_detector.py:204 - 清理文档内容中的特殊字符...
+2025-07-30 19:07:44,818 - ai_insurance - INFO - rag_pit_detector.py:217 - 文档分割完成，共 660 个文档块
+2025-07-30 19:07:45,031 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 19:08:29,045 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:08:29,067 - ai_insurance - INFO - rag_pit_detector.py:123 - 成功加载 660 条保险坑点数据
+2025-07-30 19:08:29,127 - ai_insurance - INFO - rag_pit_detector.py:152 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:08:29,249 - ai_insurance - INFO - rag_pit_detector.py:262 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:08:32,768 - ai_insurance - INFO - rag_pit_detector.py:201 - 开始创建向量数据库
+2025-07-30 19:08:32,769 - ai_insurance - INFO - rag_pit_detector.py:206 - 清理文档内容中的特殊字符...
+2025-07-30 19:08:32,818 - ai_insurance - INFO - rag_pit_detector.py:219 - 文档分割完成，共 660 个文档块
+2025-07-30 19:08:33,080 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 19:09:04,188 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:09:04,209 - ai_insurance - INFO - rag_pit_detector.py:123 - 成功加载 660 条保险坑点数据
+2025-07-30 19:09:04,263 - ai_insurance - INFO - rag_pit_detector.py:152 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:09:04,375 - ai_insurance - INFO - rag_pit_detector.py:262 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:09:06,126 - ai_insurance - INFO - rag_pit_detector.py:201 - 开始创建向量数据库
+2025-07-30 19:09:06,126 - ai_insurance - INFO - rag_pit_detector.py:206 - 清理文档内容中的特殊字符...
+2025-07-30 19:09:06,172 - ai_insurance - INFO - rag_pit_detector.py:219 - 文档分割完成，共 660 个文档块
+2025-07-30 19:09:59,742 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:09:59,756 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:09:59,812 - ai_insurance - INFO - rag_pit_detector.py:149 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:09:59,941 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:10:01,574 - ai_insurance - INFO - rag_pit_detector.py:198 - 开始创建向量数据库
+2025-07-30 19:10:01,575 - ai_insurance - INFO - rag_pit_detector.py:203 - 清理文档内容中的特殊字符...
+2025-07-30 19:10:01,624 - ai_insurance - INFO - rag_pit_detector.py:216 - 文档分割完成，共 660 个文档块
+2025-07-30 19:11:16,274 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:11:16,288 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:11:16,347 - ai_insurance - INFO - rag_pit_detector.py:149 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:11:16,470 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:11:19,804 - ai_insurance - INFO - rag_pit_detector.py:199 - 开始创建向量数据库
+2025-07-30 19:11:19,805 - ai_insurance - INFO - rag_pit_detector.py:204 - 清理文档内容中的特殊字符...
+2025-07-30 19:11:19,852 - ai_insurance - INFO - rag_pit_detector.py:217 - 文档分割完成，共 660 个文档块
+2025-07-30 19:16:21,330 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:16:21,345 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:16:21,404 - ai_insurance - INFO - rag_pit_detector.py:149 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:16:21,531 - ai_insurance - INFO - rag_pit_detector.py:257 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:16:22,723 - ai_insurance - INFO - rag_pit_detector.py:197 - 开始创建向量数据库
+2025-07-30 19:16:22,723 - ai_insurance - INFO - rag_pit_detector.py:202 - 清理文档内容中的特殊字符...
+2025-07-30 19:16:22,764 - ai_insurance - INFO - rag_pit_detector.py:215 - 文档分割完成，共 660 个文档块
+2025-07-30 19:17:30,137 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:17:30,152 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:17:30,207 - ai_insurance - INFO - rag_pit_detector.py:149 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:17:30,330 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:17:31,506 - ai_insurance - INFO - rag_pit_detector.py:197 - 开始创建向量数据库
+2025-07-30 19:17:31,507 - ai_insurance - INFO - rag_pit_detector.py:202 - 清理文档内容中的特殊字符...
+2025-07-30 19:17:31,546 - ai_insurance - INFO - rag_pit_detector.py:215 - 文档分割完成，共 660 个文档块
+2025-07-30 19:19:18,981 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:19:18,995 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:19:19,053 - ai_insurance - INFO - rag_pit_detector.py:149 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:19:19,184 - ai_insurance - INFO - rag_pit_detector.py:258 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:19:20,439 - ai_insurance - INFO - rag_pit_detector.py:198 - 开始创建向量数据库
+2025-07-30 19:19:20,439 - ai_insurance - INFO - rag_pit_detector.py:203 - 清理文档内容中的特殊字符...
+2025-07-30 19:19:20,476 - ai_insurance - INFO - rag_pit_detector.py:216 - 文档分割完成，共 660 个文档块
+2025-07-30 19:20:18,981 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:20:18,995 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:20:19,049 - ai_insurance - INFO - rag_pit_detector.py:149 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:20:19,172 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:20:20,912 - ai_insurance - INFO - rag_pit_detector.py:199 - 开始创建向量数据库
+2025-07-30 19:20:20,913 - ai_insurance - INFO - rag_pit_detector.py:204 - 清理文档内容中的特殊字符...
+2025-07-30 19:20:20,956 - ai_insurance - INFO - rag_pit_detector.py:217 - 文档分割完成，共 660 个文档块
+2025-07-30 19:20:54,306 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:20:54,320 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:20:54,374 - ai_insurance - INFO - rag_pit_detector.py:149 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:20:54,497 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:20:58,845 - ai_insurance - INFO - rag_pit_detector.py:199 - 开始创建向量数据库
+2025-07-30 19:20:58,846 - ai_insurance - INFO - rag_pit_detector.py:204 - 清理文档内容中的特殊字符...
+2025-07-30 19:21:28,612 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:21:28,626 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:21:28,681 - ai_insurance - INFO - rag_pit_detector.py:149 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:21:28,794 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:21:31,212 - ai_insurance - INFO - rag_pit_detector.py:199 - 开始创建向量数据库
+2025-07-30 19:21:31,212 - ai_insurance - INFO - rag_pit_detector.py:204 - 清理文档内容中的特殊字符...
+2025-07-30 19:21:31,254 - ai_insurance - INFO - rag_pit_detector.py:217 - 文档分割完成，共 660 个文档块
+2025-07-30 19:26:17,420 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:26:17,435 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:26:17,492 - ai_insurance - INFO - rag_pit_detector.py:149 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:26:17,616 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:26:19,074 - ai_insurance - INFO - rag_pit_detector.py:199 - 开始创建向量数据库
+2025-07-30 19:26:19,075 - ai_insurance - INFO - rag_pit_detector.py:204 - 清理文档内容中的特殊字符...
+2025-07-30 19:26:19,120 - ai_insurance - INFO - rag_pit_detector.py:217 - 文档分割完成，共 660 个文档块
+2025-07-30 19:26:36,252 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:26:36,267 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:26:36,321 - ai_insurance - INFO - rag_pit_detector.py:149 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:26:36,432 - ai_insurance - INFO - rag_pit_detector.py:260 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:26:42,230 - ai_insurance - INFO - rag_pit_detector.py:199 - 开始创建向量数据库
+2025-07-30 19:26:42,232 - ai_insurance - INFO - rag_pit_detector.py:204 - 清理文档内容中的特殊字符...
+2025-07-30 19:26:42,275 - ai_insurance - INFO - rag_pit_detector.py:217 - 文档分割完成，共 660 个文档块
+2025-07-30 19:38:00,156 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:38:00,172 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:38:00,254 - ai_insurance - INFO - rag_pit_detector.py:149 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:38:00,373 - ai_insurance - INFO - rag_pit_detector.py:261 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:38:13,214 - ai_insurance - INFO - rag_pit_detector.py:200 - 开始创建向量数据库
+2025-07-30 19:38:13,217 - ai_insurance - INFO - rag_pit_detector.py:205 - 清理文档内容中的特殊字符...
+2025-07-30 19:38:13,258 - ai_insurance - INFO - rag_pit_detector.py:218 - 文档分割完成，共 660 个文档块
+2025-07-30 19:40:16,244 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:40:16,260 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:40:16,317 - ai_insurance - INFO - rag_pit_detector.py:148 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:40:16,435 - ai_insurance - INFO - rag_pit_detector.py:245 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:40:17,994 - ai_insurance - INFO - rag_pit_detector.py:185 - 开始创建向量数据库
+2025-07-30 19:40:17,996 - ai_insurance - INFO - rag_pit_detector.py:190 - 清理文档内容中的特殊字符...
+2025-07-30 19:40:18,032 - ai_insurance - INFO - rag_pit_detector.py:203 - 文档分割完成，共 660 个文档块
+2025-07-30 19:40:49,260 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:40:49,274 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:42:32,622 - ai_insurance - INFO - rag_pit_detector.py:149 - 回退到本地sentence-transformers模型
+2025-07-30 19:42:33,674 - ai_insurance - INFO - rag_pit_detector.py:245 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:42:46,814 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:42:46,829 - ai_insurance - INFO - rag_pit_detector.py:120 - 成功加载 660 条保险坑点数据
+2025-07-30 19:42:57,602 - ai_insurance - INFO - rag_pit_detector.py:149 - 回退到本地sentence-transformers模型
+2025-07-30 19:42:57,772 - ai_insurance - INFO - rag_pit_detector.py:245 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:42:59,975 - ai_insurance - INFO - rag_pit_detector.py:185 - 开始创建向量数据库
+2025-07-30 19:42:59,976 - ai_insurance - INFO - rag_pit_detector.py:190 - 清理文档内容中的特殊字符...
+2025-07-30 19:43:00,018 - ai_insurance - INFO - rag_pit_detector.py:203 - 文档分割完成，共 660 个文档块
+2025-07-30 19:43:06,857 - ai_insurance - INFO - rag_pit_detector.py:212 - FAISS向量数据库创建成功
+2025-07-30 19:43:06,877 - ai_insurance - INFO - rag_pit_detector.py:224 - 向量数据库已保存到: data/vector_store/faiss_index
+2025-07-30 19:43:06,880 - ai_insurance - INFO - rag_pit_detector.py:245 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:57:46,363 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 19:57:46,375 - ai_insurance - INFO - rag_pit_detector.py:121 - 成功加载 660 条保险坑点数据
+2025-07-30 19:57:46,433 - ai_insurance - INFO - rag_pit_detector.py:153 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 19:57:47,538 - ai_insurance - INFO - rag_pit_detector.py:249 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 19:57:50,358 - ai_insurance - INFO - rag_pit_detector.py:169 - 开始创建向量数据库
+2025-07-30 19:57:50,384 - ai_insurance - INFO - rag_pit_detector.py:184 - 文档分割完成，共 660 个文档块
+2025-07-30 19:57:50,394 - ai_insurance - INFO - rag_pit_detector.py:206 - 文档内容清理完成，共 660 个清理后的文档块
+2025-07-30 19:57:51,158 - ai_insurance - ERROR - rag_pit_detector.py:217 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 19:57:51,158 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 20:00:01,263 - ai_insurance - INFO - rag_pit_detector.py:87 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 20:00:01,273 - ai_insurance - INFO - rag_pit_detector.py:121 - 成功加载 660 条保险坑点数据
+2025-07-30 20:00:01,335 - ai_insurance - INFO - rag_pit_detector.py:153 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 20:00:02,342 - ai_insurance - INFO - rag_pit_detector.py:249 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 20:00:26,684 - ai_insurance - INFO - rag_pit_detector.py:169 - 开始创建向量数据库
+2025-07-30 20:00:26,715 - ai_insurance - INFO - rag_pit_detector.py:184 - 文档分割完成，共 660 个文档块
+2025-07-30 20:00:26,725 - ai_insurance - INFO - rag_pit_detector.py:206 - 文档内容清理完成，共 660 个清理后的文档块
+2025-07-30 20:00:28,762 - ai_insurance - ERROR - rag_pit_detector.py:217 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 20:05:26,243 - ai_insurance - INFO - rag_pit_detector.py:101 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 20:05:26,264 - ai_insurance - INFO - rag_pit_detector.py:135 - 成功加载 660 条保险坑点数据
+2025-07-30 20:10:42,813 - ai_insurance - INFO - rag_pit_detector.py:93 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 20:10:42,828 - ai_insurance - INFO - rag_pit_detector.py:127 - 成功加载 660 条保险坑点数据
+2025-07-30 20:10:42,888 - ai_insurance - INFO - rag_pit_detector.py:159 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 20:10:43,941 - ai_insurance - INFO - rag_pit_detector.py:233 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 20:25:35,818 - ai_insurance - INFO - rag_pit_detector.py:93 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 20:25:35,832 - ai_insurance - INFO - rag_pit_detector.py:127 - 成功加载 660 条保险坑点数据
+2025-07-30 20:25:35,889 - ai_insurance - INFO - rag_pit_detector.py:159 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 20:25:36,028 - ai_insurance - INFO - rag_pit_detector.py:233 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 20:25:37,345 - ai_insurance - INFO - rag_pit_detector.py:175 - 开始创建向量数据库
+2025-07-30 20:25:37,372 - ai_insurance - INFO - rag_pit_detector.py:190 - 文档分割完成，共 660 个文档块
+2025-07-30 20:25:38,395 - ai_insurance - ERROR - rag_pit_detector.py:201 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 20:25:38,395 - ai_insurance - ERROR - preprocess_pits_data.py:110 - 数据预处理失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 20:39:45,880 - ai_insurance - INFO - rag_pit_detector.py:93 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 20:39:45,895 - ai_insurance - INFO - rag_pit_detector.py:127 - 成功加载 660 条保险坑点数据
+2025-07-30 20:39:45,954 - ai_insurance - INFO - rag_pit_detector.py:159 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 20:39:46,077 - ai_insurance - INFO - rag_pit_detector.py:233 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 20:39:48,712 - ai_insurance - INFO - rag_pit_detector.py:175 - 开始创建向量数据库
+2025-07-30 20:39:48,741 - ai_insurance - INFO - rag_pit_detector.py:190 - 文档分割完成，共 660 个文档块
+2025-07-30 20:39:49,151 - ai_insurance - ERROR - rag_pit_detector.py:201 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-30 20:41:06,831 - ai_insurance - INFO - rag_pit_detector.py:93 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 20:41:06,845 - ai_insurance - INFO - rag_pit_detector.py:127 - 成功加载 660 条保险坑点数据
+2025-07-30 20:41:06,925 - ai_insurance - INFO - rag_pit_detector.py:159 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 20:41:07,062 - ai_insurance - INFO - rag_pit_detector.py:230 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 20:41:10,734 - ai_insurance - INFO - rag_pit_detector.py:175 - 开始创建向量数据库
+2025-07-30 20:41:10,783 - ai_insurance - INFO - rag_pit_detector.py:190 - 文档分割完成，共 660 个文档块
+2025-07-30 20:42:09,331 - ai_insurance - INFO - rag_pit_detector.py:93 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-30 20:42:09,344 - ai_insurance - INFO - rag_pit_detector.py:127 - 成功加载 660 条保险坑点数据
+2025-07-30 20:42:09,417 - ai_insurance - INFO - rag_pit_detector.py:159 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-30 20:42:09,556 - ai_insurance - INFO - rag_pit_detector.py:232 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-30 20:42:10,919 - ai_insurance - INFO - rag_pit_detector.py:175 - 开始创建向量数据库
+2025-07-30 20:42:10,942 - ai_insurance - INFO - rag_pit_detector.py:192 - 文档分割完成，共 660 个文档块
+2025-07-31 09:42:57,904 - ai_insurance - INFO - rag_pit_detector.py:93 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 09:42:57,920 - ai_insurance - INFO - rag_pit_detector.py:127 - 成功加载 660 条保险坑点数据
+2025-07-31 09:42:57,982 - ai_insurance - INFO - rag_pit_detector.py:159 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 09:42:59,331 - ai_insurance - INFO - rag_pit_detector.py:235 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 09:43:34,013 - ai_insurance - INFO - rag_pit_detector.py:175 - 开始创建向量数据库
+2025-07-31 09:43:34,060 - ai_insurance - INFO - rag_pit_detector.py:195 - 文档分割完成，共 660 个文档块
+2025-07-31 09:44:56,801 - ai_insurance - INFO - rag_pit_detector.py:94 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 09:44:56,827 - ai_insurance - INFO - rag_pit_detector.py:128 - 成功加载 660 条保险坑点数据
+2025-07-31 09:44:56,890 - ai_insurance - INFO - rag_pit_detector.py:160 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 09:44:57,013 - ai_insurance - INFO - rag_pit_detector.py:236 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 09:50:46,714 - ai_insurance - INFO - rag_pit_detector.py:176 - 开始创建向量数据库
+2025-07-31 09:50:46,797 - ai_insurance - INFO - rag_pit_detector.py:196 - 文档分割完成，共 660 个文档块
+2025-07-31 09:52:15,355 - ai_insurance - INFO - rag_pit_detector.py:95 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 09:52:15,402 - ai_insurance - INFO - rag_pit_detector.py:129 - 成功加载 660 条保险坑点数据
+2025-07-31 09:52:15,466 - ai_insurance - INFO - rag_pit_detector.py:161 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 09:52:15,596 - ai_insurance - INFO - rag_pit_detector.py:237 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 09:52:17,355 - ai_insurance - INFO - rag_pit_detector.py:177 - 开始创建向量数据库
+2025-07-31 09:52:17,385 - ai_insurance - INFO - rag_pit_detector.py:197 - 文档分割完成，共 660 个文档块
+2025-07-31 10:40:20,813 - ai_insurance - INFO - rag_pit_detector.py:125 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 10:40:20,830 - ai_insurance - INFO - rag_pit_detector.py:159 - 成功加载 660 条保险坑点数据
+2025-07-31 10:40:20,887 - ai_insurance - INFO - rag_pit_detector.py:191 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 10:40:21,026 - ai_insurance - INFO - rag_pit_detector.py:330 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 10:40:22,774 - ai_insurance - INFO - rag_pit_detector.py:207 - 开始创建向量数据库
+2025-07-31 10:40:22,805 - ai_insurance - INFO - rag_pit_detector.py:221 - 文档分割完成，共 660 个文档块
+2025-07-31 10:40:23,256 - ai_insurance - ERROR - rag_pit_detector.py:233 - 创建向量数据库失败: 'latin-1' codec can't encode character '\u2018' in position 7: ordinal not in range(256)
+2025-07-31 10:40:23,257 - ai_insurance - INFO - rag_pit_detector.py:236 - 检测到编码问题，尝试更深度的文本清理...
+2025-07-31 11:25:25,339 - ai_insurance - INFO - rag_pit_detector.py:94 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 11:25:25,382 - ai_insurance - INFO - rag_pit_detector.py:128 - 成功加载 660 条保险坑点数据
+2025-07-31 11:25:25,461 - ai_insurance - INFO - rag_pit_detector.py:160 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 11:25:26,788 - ai_insurance - INFO - rag_pit_detector.py:236 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 11:25:49,124 - ai_insurance - INFO - rag_pit_detector.py:176 - 开始创建向量数据库
+2025-07-31 11:25:49,160 - ai_insurance - INFO - rag_pit_detector.py:196 - 文档分割完成，共 660 个文档块
+2025-07-31 11:30:00,312 - ai_insurance - INFO - rag_pit_detector.py:94 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 11:30:00,349 - ai_insurance - INFO - rag_pit_detector.py:128 - 成功加载 660 条保险坑点数据
+2025-07-31 11:30:00,413 - ai_insurance - INFO - rag_pit_detector.py:160 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 11:30:01,617 - ai_insurance - INFO - rag_pit_detector.py:237 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 11:43:22,695 - ai_insurance - INFO - rag_pit_detector.py:176 - 开始创建向量数据库
+2025-07-31 11:43:22,752 - ai_insurance - INFO - rag_pit_detector.py:196 - 文档分割完成，共 660 个文档块
+2025-07-31 11:45:52,794 - ai_insurance - INFO - rag_pit_detector.py:94 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 11:45:52,847 - ai_insurance - INFO - rag_pit_detector.py:128 - 成功加载 660 条保险坑点数据
+2025-07-31 11:45:52,931 - ai_insurance - INFO - rag_pit_detector.py:160 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 11:45:53,102 - ai_insurance - INFO - rag_pit_detector.py:246 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 11:45:56,101 - ai_insurance - INFO - rag_pit_detector.py:176 - 开始创建向量数据库
+2025-07-31 11:45:56,116 - ai_insurance - INFO - rag_pit_detector.py:196 - 文档分割完成，共 660 个文档块
+2025-07-31 11:46:31,696 - ai_insurance - INFO - rag_pit_detector.py:94 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 11:46:31,735 - ai_insurance - INFO - rag_pit_detector.py:128 - 成功加载 660 条保险坑点数据
+2025-07-31 11:46:31,809 - ai_insurance - INFO - rag_pit_detector.py:160 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 11:46:31,958 - ai_insurance - INFO - rag_pit_detector.py:247 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 11:46:33,394 - ai_insurance - INFO - rag_pit_detector.py:176 - 开始创建向量数据库
+2025-07-31 11:46:33,420 - ai_insurance - INFO - rag_pit_detector.py:194 - 文档分割完成，共 660 个文档块
+2025-07-31 12:17:21,661 - ai_insurance - INFO - rag_pit_detector.py:94 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 12:17:21,703 - ai_insurance - INFO - rag_pit_detector.py:128 - 成功加载 660 条保险坑点数据
+2025-07-31 12:17:21,772 - ai_insurance - INFO - rag_pit_detector.py:160 - 初始化阿里云嵌入模型: text-embedding-v2
+2025-07-31 12:17:23,142 - ai_insurance - INFO - rag_pit_detector.py:247 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 12:17:24,645 - ai_insurance - INFO - rag_pit_detector.py:176 - 开始创建向量数据库
+2025-07-31 12:17:24,673 - ai_insurance - INFO - rag_pit_detector.py:194 - 文档分割完成，共 660 个文档块
+2025-07-31 12:33:51,192 - ai_insurance - INFO - rag_pit_detector.py:94 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 12:33:51,234 - ai_insurance - INFO - rag_pit_detector.py:128 - 成功加载 660 条保险坑点数据
+2025-07-31 12:33:51,293 - ai_insurance - INFO - rag_pit_detector.py:160 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 12:33:51,403 - ai_insurance - INFO - rag_pit_detector.py:248 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 12:33:54,495 - ai_insurance - INFO - rag_pit_detector.py:176 - 开始创建向量数据库
+2025-07-31 12:33:54,511 - ai_insurance - INFO - rag_pit_detector.py:194 - 文档分割完成，共 660 个文档块
+2025-07-31 12:33:55,412 - ai_insurance - INFO - rag_pit_detector.py:215 - FAISS向量数据库创建成功
+2025-07-31 12:33:55,416 - ai_insurance - INFO - rag_pit_detector.py:227 - 向量数据库已保存到: data/vector_store/faiss_index
+2025-07-31 12:33:55,417 - ai_insurance - INFO - rag_pit_detector.py:248 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 12:34:29,739 - ai_insurance - INFO - rag_pit_detector.py:94 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 12:34:29,778 - ai_insurance - INFO - rag_pit_detector.py:128 - 成功加载 660 条保险坑点数据
+2025-07-31 12:34:29,839 - ai_insurance - INFO - rag_pit_detector.py:160 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 12:34:29,963 - ai_insurance - INFO - rag_pit_detector.py:239 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 12:34:31,887 - ai_insurance - INFO - rag_pit_detector.py:176 - 开始创建向量数据库
+2025-07-31 12:34:31,914 - ai_insurance - INFO - rag_pit_detector.py:194 - 文档分割完成，共 660 个文档块
+2025-07-31 12:53:07,058 - ai_insurance - INFO - rag_pit_detector.py:94 - 开始加载保险坑点数据: ../data/insurance_pits_merged.json
+2025-07-31 12:53:07,101 - ai_insurance - INFO - rag_pit_detector.py:128 - 成功加载 660 条保险坑点数据
+2025-07-31 12:53:07,166 - ai_insurance - INFO - rag_pit_detector.py:160 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 12:53:08,287 - ai_insurance - INFO - rag_pit_detector.py:268 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 12:53:47,544 - ai_insurance - INFO - rag_pit_detector.py:176 - 开始创建向量数据库
+2025-07-31 12:53:47,580 - ai_insurance - INFO - rag_pit_detector.py:190 - 文档分割完成，共 660 个文档块
+2025-07-31 12:53:47,581 - ai_insurance - INFO - rag_pit_detector.py:205 - 分批处理文档，每批 8 个
+2025-07-31 12:53:50,071 - ai_insurance - INFO - rag_pit_detector.py:213 - 处理第1批: 8 个文档
+2025-07-31 12:53:50,071 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第2批: 8 个文档
+2025-07-31 12:53:50,582 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第3批: 8 个文档
+2025-07-31 12:53:51,109 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第4批: 8 个文档
+2025-07-31 12:53:51,602 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第5批: 8 个文档
+2025-07-31 12:53:52,146 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第6批: 8 个文档
+2025-07-31 12:53:52,633 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第7批: 8 个文档
+2025-07-31 12:53:53,183 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第8批: 8 个文档
+2025-07-31 12:53:53,689 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第9批: 8 个文档
+2025-07-31 12:53:54,158 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第10批: 8 个文档
+2025-07-31 12:53:54,691 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第11批: 8 个文档
+2025-07-31 12:53:55,324 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第12批: 8 个文档
+2025-07-31 12:53:55,892 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第13批: 8 个文档
+2025-07-31 12:53:56,381 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第14批: 8 个文档
+2025-07-31 12:53:56,885 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第15批: 8 个文档
+2025-07-31 12:53:57,401 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第16批: 8 个文档
+2025-07-31 12:53:57,887 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第17批: 8 个文档
+2025-07-31 12:53:58,384 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第18批: 8 个文档
+2025-07-31 12:53:58,862 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第19批: 8 个文档
+2025-07-31 12:53:59,372 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第20批: 8 个文档
+2025-07-31 12:53:59,853 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第21批: 8 个文档
+2025-07-31 12:54:00,339 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第22批: 8 个文档
+2025-07-31 12:54:00,869 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第23批: 8 个文档
+2025-07-31 12:54:01,360 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第24批: 8 个文档
+2025-07-31 12:54:01,856 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第25批: 8 个文档
+2025-07-31 12:54:02,359 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第26批: 8 个文档
+2025-07-31 12:54:02,947 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第27批: 8 个文档
+2025-07-31 12:54:03,552 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第28批: 8 个文档
+2025-07-31 12:54:04,256 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第29批: 8 个文档
+2025-07-31 12:54:04,883 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第30批: 8 个文档
+2025-07-31 12:54:05,437 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第31批: 8 个文档
+2025-07-31 12:54:06,003 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第32批: 8 个文档
+2025-07-31 12:54:06,653 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第33批: 8 个文档
+2025-07-31 12:54:07,245 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第34批: 8 个文档
+2025-07-31 12:54:07,889 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第35批: 8 个文档
+2025-07-31 12:54:08,457 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第36批: 8 个文档
+2025-07-31 12:54:09,093 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第37批: 8 个文档
+2025-07-31 12:54:09,680 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第38批: 8 个文档
+2025-07-31 12:54:10,186 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第39批: 8 个文档
+2025-07-31 12:54:10,755 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第40批: 8 个文档
+2025-07-31 12:54:11,514 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第41批: 8 个文档
+2025-07-31 12:54:12,113 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第42批: 8 个文档
+2025-07-31 12:54:12,672 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第43批: 8 个文档
+2025-07-31 12:54:13,232 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第44批: 8 个文档
+2025-07-31 12:54:13,772 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第45批: 8 个文档
+2025-07-31 12:54:14,339 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第46批: 8 个文档
+2025-07-31 12:54:15,024 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第47批: 8 个文档
+2025-07-31 12:54:15,640 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第48批: 8 个文档
+2025-07-31 12:54:16,190 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第49批: 8 个文档
+2025-07-31 12:54:16,729 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第50批: 8 个文档
+2025-07-31 12:54:17,324 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第51批: 8 个文档
+2025-07-31 12:54:17,893 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第52批: 8 个文档
+2025-07-31 12:54:18,388 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第53批: 8 个文档
+2025-07-31 12:54:19,054 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第54批: 8 个文档
+2025-07-31 12:54:19,699 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第55批: 8 个文档
+2025-07-31 12:54:20,453 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第56批: 8 个文档
+2025-07-31 12:54:21,065 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第57批: 8 个文档
+2025-07-31 12:54:21,577 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第58批: 8 个文档
+2025-07-31 12:54:22,279 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第59批: 8 个文档
+2025-07-31 12:54:22,832 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第60批: 8 个文档
+2025-07-31 12:54:23,366 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第61批: 8 个文档
+2025-07-31 12:54:23,945 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第62批: 8 个文档
+2025-07-31 12:54:24,639 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第63批: 8 个文档
+2025-07-31 12:54:25,245 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第64批: 8 个文档
+2025-07-31 12:54:25,777 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第65批: 8 个文档
+2025-07-31 12:54:26,359 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第66批: 8 个文档
+2025-07-31 12:54:27,038 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第67批: 8 个文档
+2025-07-31 12:54:27,632 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第68批: 8 个文档
+2025-07-31 12:54:28,257 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第69批: 8 个文档
+2025-07-31 12:54:28,818 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第70批: 8 个文档
+2025-07-31 12:54:29,487 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第71批: 8 个文档
+2025-07-31 12:54:30,180 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第72批: 8 个文档
+2025-07-31 12:54:30,697 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第73批: 8 个文档
+2025-07-31 12:54:31,295 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第74批: 8 个文档
+2025-07-31 12:54:31,866 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第75批: 8 个文档
+2025-07-31 12:54:32,440 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第76批: 8 个文档
+2025-07-31 12:54:33,058 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第77批: 8 个文档
+2025-07-31 12:54:33,600 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第78批: 8 个文档
+2025-07-31 12:54:34,133 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第79批: 8 个文档
+2025-07-31 12:54:34,675 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第80批: 8 个文档
+2025-07-31 12:54:35,199 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第81批: 8 个文档
+2025-07-31 12:54:35,809 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第82批: 8 个文档
+2025-07-31 12:54:36,309 - ai_insurance - INFO - rag_pit_detector.py:220 - 处理第83批: 4 个文档
+2025-07-31 12:54:36,678 - ai_insurance - INFO - rag_pit_detector.py:231 - FAISS向量数据库创建成功
+2025-07-31 12:54:36,697 - ai_insurance - INFO - rag_pit_detector.py:247 - 向量数据库已保存到: data/vector_store/faiss_index
+2025-07-31 12:54:36,703 - ai_insurance - INFO - rag_pit_detector.py:268 - 成功加载向量数据库: data/vector_store/faiss_index
