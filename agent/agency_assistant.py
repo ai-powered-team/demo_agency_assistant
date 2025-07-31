@@ -20,7 +20,7 @@ from util import (
     ThinkingResponse, AnswerResponse, ErrorResponse,
     ChatMessage, AgentResponse
 )
-from .rag_pit_detector import get_pit_retriever
+from util.rag_pit_detector import get_pit_retriever
 
 
 class AgencyAssistantState(TypedDict):

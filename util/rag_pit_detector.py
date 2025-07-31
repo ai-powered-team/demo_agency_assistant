@@ -130,7 +130,7 @@ class PitVectorStore:
     def __init__(
         self, 
         vector_store_path: str = "data/vector_store",
-        embedding_model: str = "text-embedding-v2"
+        embedding_model: str = "text-embedding-v4"
     ):
         self.vector_store_path = Path(vector_store_path)
         self.embedding_model = embedding_model
@@ -370,6 +370,8 @@ class PitRetriever:
                 min_sim = min(r["similarity"] for r in results)
                 max_sim = max(r["similarity"] for r in results)
                 logger.info(f"检索到 {len(results)} 个相关坑点 (查询: {query[:50]}..., 相似度范围: {min_sim:.3f}-{max_sim:.3f})")
+                #results_example = "\n".join([r['content'] for r in results])
+                #logger.info(f"检索到的坑点: {results_example}")
             else:
                 logger.warning(f"未检索到满足条件的坑点 (查询: {query[:50]}..., 阈值: {threshold})")
                 if all_candidates:

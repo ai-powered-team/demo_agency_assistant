@@ -436,3 +436,114 @@
 2025-07-31 16:35:08,085 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
 2025-07-31 16:35:08,095 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
 2025-07-31 16:35:14,948 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-07-31 16:56:23,917 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v2
+2025-07-31 16:56:25,535 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 16:56:25,536 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 16:56:35,053 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 16:56:39,994 - ai_insurance - INFO - agency_assistant.py:304 - 生成助理建议
+2025-07-31 16:56:40,271 - ai_insurance - ERROR - rag_pit_detector.py:382 - 检索失败: 
+2025-07-31 16:56:40,271 - ai_insurance - INFO - agency_assistant.py:343 - 未检索到相关坑点
+2025-07-31 16:56:52,389 - ai_insurance - INFO - agency_assistant.py:252 - 生成AI用户回应
+2025-07-31 16:57:00,139 - ai_insurance - INFO - agency_assistant.py:490 - 完成智能对话助理分析
+2025-07-31 17:07:17,352 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v2
+2025-07-31 17:07:18,358 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 17:07:18,359 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 17:07:36,223 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 17:07:40,623 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 17:07:40,875 - ai_insurance - ERROR - rag_pit_detector.py:382 - 检索失败: 
+2025-07-31 17:07:40,876 - ai_insurance - INFO - agency_assistant.py:334 - 未检索到相关坑点
+2025-07-31 17:07:54,413 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 17:08:04,194 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-07-31 17:08:32,251 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v2
+2025-07-31 17:08:32,343 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 17:08:32,344 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 17:08:38,693 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 17:08:44,342 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 17:08:44,634 - ai_insurance - ERROR - rag_pit_detector.py:382 - 检索失败: 
+2025-07-31 17:08:44,635 - ai_insurance - INFO - agency_assistant.py:334 - 未检索到相关坑点
+2025-07-31 17:08:57,347 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 17:09:07,278 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-07-31 17:09:22,063 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 17:09:22,131 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 17:09:22,131 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 17:09:36,877 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 17:09:39,768 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 17:09:40,165 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 你好啊 无具体主题..., 相似度范围: 0.436-0.440)
+2025-07-31 17:09:40,165 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-07-31 17:09:52,259 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-07-31 17:09:52,265 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 17:09:59,171 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-07-31 17:13:26,079 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 17:13:27,374 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 17:13:27,374 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 17:13:56,432 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 17:14:00,221 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 17:14:00,646 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 你好 初始问候..., 相似度范围: 0.451-0.465)
+2025-07-31 17:14:00,646 - ai_insurance - INFO - rag_pit_detector.py:374 - 检索到的坑点: 
+
+
+
+
+2025-07-31 17:14:00,646 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-07-31 17:14:13,065 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-07-31 17:14:13,073 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 17:14:20,401 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-07-31 17:14:35,960 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 17:14:37,716 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 17:14:38,174 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 你好 保险服务咨询..., 相似度范围: 0.528-0.540)
+2025-07-31 17:14:38,175 - ai_insurance - INFO - rag_pit_detector.py:374 - 检索到的坑点: 
+
+
+
+
+2025-07-31 17:14:38,175 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-07-31 17:14:46,313 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 17:14:46,375 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 17:14:46,375 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 17:14:52,702 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 17:14:54,802 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 17:14:55,120 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 你好 初始问候..., 相似度范围: 0.451-0.465)
+2025-07-31 17:14:55,121 - ai_insurance - ERROR - rag_pit_detector.py:384 - 检索失败: sequence item 0: expected str instance, dict found
+2025-07-31 17:14:55,121 - ai_insurance - INFO - agency_assistant.py:334 - 未检索到相关坑点
+2025-07-31 17:15:10,180 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 17:15:25,437 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 17:15:25,518 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 17:15:25,518 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 17:15:46,758 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 17:15:49,477 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 17:15:49,879 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 你好 初始问候..., 相似度范围: 0.451-0.465)
+2025-07-31 17:15:49,882 - ai_insurance - INFO - rag_pit_detector.py:374 - 检索到的坑点: [{'content': 'category: 核保与健康告知相关坑点\ntitle: 指导客户"闯关式"告知\nexample: "这个小毛病没住院就不用说"、"体检报告只要没确诊就不用管"。\nreason: 这是最危险的误导行为。保险理赔遵循"最大诚信原则"，任何隐瞒或欺骗都将直接导致合同无效和拒赔。[6][7]', 'metadata': {'category': '核保与健康告知相关坑点', 'id': 1, 'title': '指导客户"闯关式"告知', 'source': 'insurance_pits_merged.json'}, 'similarity': 0.4650900583726665, 'score': 1.1501212, 'category': '核保与健康告知相关坑点', 'title': '', 'reason': ''}, {'content': 'category: 核保与健康告知相关坑点\ntitle: 不主动提供和解释"健康告知"问卷\nexample: 在投保流程中，自己快速替客户勾选所有"否"，然后让客户直接签字确认。\nreason: 架空了健康告知这一核心环节，客户在完全不知情的情况下"被承诺"自己身体健康，为理赔埋下巨大隐患。', 'metadata': {'category': '核保与健康告知相关坑点', 'id': 3, 'title': '不主动提供和解释"健康告知"问卷', 'source': 'insurance_pits_merged.json'}, 'similarity': 0.46216392517762384, 'score': 1.1637344, 'category': '核保与健康告知相关坑点', 'title': '', 'reason': ''}, {'content': "category: 销售行为与专业伦理相关坑点\ntitle: 客服答复不完整\nexample: 客服回复'肺部疾病可正常报销'，但未针对'恶性待排'的特殊情况补充说明。\nreason: 一线服务人员可能缺乏专业培训或刻意回避敏感问题，导致消费者获取片面信息。", 'metadata': {'category': '销售行为与专业伦理相关坑点', 'id': 49, 'title': '客服答复不完整', 'source': 'insurance_pits_merged.json'}, 'similarity': 0.4516151122678588, 'score': 1.2142749, 'category': '销售行为与专业伦理相关坑点', 'title': '', 'reason': ''}, {'content': 'category: 保障责任与理赔条款相关坑点\ntitle: 模糊"等待期"的限制\nexample: 在介绍产品时，不主动或快速提及"等待期"（也叫观察期）的存在，让客户误以为保单生效后立刻就能获得所有疾病的保障。[6]\nreason: 如果在等待期内出险，保险公司有权拒赔。隐瞒这一点，是对投保人知情权的严重侵害。[6]', 'metadata': {'category': '保障责任与理赔条款相关坑点', 'id': 3, 'title': '模糊"等待期"的限制', 'source': 'insurance_pits_merged.json'}, 'similarity': 0.45137934608116725, 'score': 1.2154315, 'category': '保障责任与理赔条款相关坑点', 'title': '', 'reason': ''}, {'content': 'category: 核保与健康告知相关坑点\ntitle: 忽视儿童的健康告知特殊性\nexample: 在为儿童投保时，不仔细询问其出生时的情况（如是否早产、评分等）和疫苗接种记录。\nreason: 儿童的健康告知有其特殊性，这些信息同样重要，关系到未来理赔的顺利与否。', 'metadata': {'category': '核保与健康告知相关坑点', 'id': 8, 'title': '忽视儿童的健康告知特殊性', 'source': 'insurance_pits_merged.json'}, 'similarity': 0.4510461652186883, 'score': 1.217068, 'category': '核保与健康告知相关坑点', 'title': '', 'reason': ''}]
+2025-07-31 17:15:49,882 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-07-31 17:16:02,420 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-07-31 17:16:02,437 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 17:16:14,719 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-07-31 17:20:31,266 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 17:20:31,339 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 17:20:31,339 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 17:21:05,221 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 17:21:09,506 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 17:21:09,915 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 你好 初始问候..., 相似度范围: 0.451-0.465)
+2025-07-31 17:21:09,915 - ai_insurance - INFO - rag_pit_detector.py:374 - 检索到的坑点: category: 核保与健康告知相关坑点
+title: 指导客户"闯关式"告知
+example: "这个小毛病没住院就不用说"、"体检报告只要没确诊就不用管"。
+reason: 这是最危险的误导行为。保险理赔遵循"最大诚信原则"，任何隐瞒或欺骗都将直接导致合同无效和拒赔。[6][7]
+category: 核保与健康告知相关坑点
+title: 不主动提供和解释"健康告知"问卷
+example: 在投保流程中，自己快速替客户勾选所有"否"，然后让客户直接签字确认。
+reason: 架空了健康告知这一核心环节，客户在完全不知情的情况下"被承诺"自己身体健康，为理赔埋下巨大隐患。
+category: 销售行为与专业伦理相关坑点
+title: 客服答复不完整
+example: 客服回复'肺部疾病可正常报销'，但未针对'恶性待排'的特殊情况补充说明。
+reason: 一线服务人员可能缺乏专业培训或刻意回避敏感问题，导致消费者获取片面信息。
+category: 保障责任与理赔条款相关坑点
+title: 模糊"等待期"的限制
+example: 在介绍产品时，不主动或快速提及"等待期"（也叫观察期）的存在，让客户误以为保单生效后立刻就能获得所有疾病的保障。[6]
+reason: 如果在等待期内出险，保险公司有权拒赔。隐瞒这一点，是对投保人知情权的严重侵害。[6]
+category: 核保与健康告知相关坑点
+title: 忽视儿童的健康告知特殊性
+example: 在为儿童投保时，不仔细询问其出生时的情况（如是否早产、评分等）和疫苗接种记录。
+reason: 儿童的健康告知有其特殊性，这些信息同样重要，关系到未来理赔的顺利与否。
+2025-07-31 17:21:09,915 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-07-31 17:21:22,242 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-07-31 17:21:22,254 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 17:21:29,319 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
