@@ -8,6 +8,7 @@
 - 🎯 **个性化产品推荐**: 结合用户画像和产品库，推荐最适合的保险产品
 - 💬 **智能经纪人沟通**: 模拟经纪人对话，并为用户提供专业建议
 - 🧠 **智能对话助理**: 模拟第三方助理帮助用户和保险经纪进行对话，在测试场景中AI模拟客户和第三方助理，真人扮演经纪人
+- 🤖 **自动化AI对话测试**: 支持双AI对抗性对话测试，经纪人AI使用误导性话术，用户AI基于智能建议进行防御
 - 🔄 **流式响应**: 实时返回 AI 思考过程和结果
 - 📊 **结构化数据**: 使用 TypedDict 确保数据类型安全
 - 🚀 **异步处理**: 全异步架构，支持高并发
@@ -155,6 +156,8 @@ python test_agency_recommend.py
 
 ### 11. 智能对话助理功能
 
+#### 11.1 交互式对话测试
+
 使用命令行对话系统验证智能助理功能：
 
 ```bash
@@ -178,6 +181,53 @@ python test_agency_assistant.py
 - **意图识别**: 基于 Qwen3 API 的多维度意图分析
 - **交互方式**: 命令行实时对话界面
 - **角色分工**: AI 客户 + 真人经纪人 + AI 助理建议
+
+#### 11.2 自动化AI对话测试
+
+使用完全自动化的AI对话系统进行对抗性测试：
+
+```bash
+python test_agency_assistant_auto.py
+```
+
+**功能特性：**
+- 🤖 **双AI对抗**: 经纪人AI vs 用户AI 的完全自动化对话
+- 🎭 **误导性话术**: 经纪人AI使用预设的误导性推销策略
+- 🛡️ **智能防御**: 用户AI基于智能建议系统进行风险识别和回应
+- 📊 **批量测试**: 支持多次测试，每次可设置不同回合数
+- 📝 **完整记录**: 自动保存所有对话到结构化日志文件
+
+**使用示例：**
+```bash
+# 默认：1次测试，每次20回合
+broker
+
+# 3次测试，每次10回合
+broker 3 10
+
+# 5次测试，每次5回合
+broker 5 5
+```
+
+**技术架构：**
+- **经纪人AI**: 预设误导性话术生成器
+- **用户AI**: 基于智能建议的回应生成器
+- **RAG系统**: 集成保险坑点数据库进行风险识别
+- **日志系统**: 结构化JSON格式记录完整对话过程
+
+**日志查看：**
+```bash
+# 查看最新对话日志
+python view_auto_dialogue.py
+
+# 查看指定日志文件
+python view_auto_dialogue.py logs/auto_dialogue_20241201_143022.json
+
+# 搜索特定内容
+python view_auto_dialogue.py --search "保费"
+```
+
+详细使用方法请参考 [AI自动化对话测试系统文档](./AUTO_DIALOGUE_README.md)。
 
 ## API 接口
 
@@ -218,6 +268,9 @@ august-demo/
 ├── test_product_recommend.py        # ProductRecommender 交互式测试程序
 ├── test_agency_communication.py     # AgencyCommunicator 交互式测试程序
 ├── test_agency_recommend.py         # AgencyRecommender 交互式测试程序
+├── test_agency_assistant.py         # 智能对话助理交互式测试程序
+├── test_agency_assistant_auto.py    # 智能对话助理自动化测试程序
+├── view_auto_dialogue.py            # 自动化对话日志查看器
 ├── api/                             # 接口层
 │   ├── __init__.py                  # API 路由注册
 │   ├── profile_analysis.py           # 用户画像分析接口
@@ -269,6 +322,20 @@ august-demo/
 用于测试经纪人推荐功能，支持多种预设对话场景和动态对话测试。
 
 详细使用方法请参考 [AgencyRecommender 交互式测试工具文档](./docs/agency-recommender-test.md)。
+
+### 智能对话助理测试工具
+
+#### 交互式对话测试
+
+用于测试智能对话助理功能，支持AI客户与真人经纪人的实时对话。
+
+详细使用方法请参考 [智能对话助理测试工具文档](./docs/agency-assistant-test.md)。
+
+#### 自动化AI对话测试
+
+用于进行完全自动化的AI对抗性对话测试，支持批量测试和完整日志记录。
+
+详细使用方法请参考 [AI自动化对话测试系统文档](./AUTO_DIALOGUE_README.md)。
 
 ### 代码规范
 

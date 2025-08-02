@@ -547,3 +547,1787 @@ reason: 儿童的健康告知有其特殊性，这些信息同样重要，关系
 2025-07-31 17:21:22,242 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
 2025-07-31 17:21:22,254 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
 2025-07-31 17:21:29,319 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-07-31 17:23:43,333 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-07-31 17:23:43,411 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-07-31 17:23:43,412 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-07-31 17:23:47,701 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 17:23:50,878 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 17:23:51,194 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 你好 初始问候..., 相似度范围: 0.451-0.465)
+2025-07-31 17:23:51,194 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-07-31 17:24:03,884 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-07-31 17:24:03,889 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 17:24:11,000 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-07-31 17:24:44,214 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-07-31 17:24:45,859 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-07-31 17:24:46,151 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们主要做医疗险，你有考虑过可能生病的风险吗？ 医疗险咨询..., 相似度范围: 0.595-0.636)
+2025-07-31 17:24:46,151 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-07-31 17:25:00,909 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-07-31 17:25:00,912 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-07-31 17:25:10,924 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:43:57,561 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-08-01 17:43:58,593 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-08-01 17:43:58,597 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-08-01 17:44:08,713 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:44:15,986 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:44:16,358 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是超级重疾险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 重疾险..., 相似度范围: 0.568-0.592)
+2025-08-01 17:44:16,359 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:44:35,463 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:44:35,469 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:44:41,699 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:44:42,714 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:44:46,364 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:44:46,695 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款超级重疾险可以完美解决您的担忧，而且现在购买还有额外优惠！ 重疾险咨..., 相似度范围: 0.613-0.621)
+2025-08-01 17:44:46,696 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:45:01,544 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:45:01,549 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:45:08,254 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:45:09,292 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:45:11,162 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:45:11,443 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款超级重疾险最大的优势就是首年保费极低，而且理赔条件宽松，可以说是市面上最划算的产品了！ 重疾..., 相似度范围: 0.595-0.608)
+2025-08-01 17:45:11,443 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:45:27,319 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:45:27,330 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:45:34,388 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:45:35,400 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:45:37,272 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:45:37,574 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺100%报销，您还有什么顾虑吗？ 重疾险咨询..., 相似度范围: 0.607-0.622)
+2025-08-01 17:45:37,574 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:45:50,535 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:45:50,542 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:45:59,131 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:46:00,145 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:46:04,700 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:46:05,031 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 重疾险咨询..., 相似度范围: 0.611-0.625)
+2025-08-01 17:46:05,031 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:46:19,629 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:46:19,639 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:46:25,915 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:46:26,929 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:46:29,141 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:46:29,464 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 重疾险咨询..., 相似度范围: 0.585-0.615)
+2025-08-01 17:46:29,464 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:46:45,135 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:46:45,141 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:46:51,335 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:46:52,345 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:46:55,520 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:46:55,825 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款超级重疾险在价格和保障方面都有明显优势，性价比最高！ 重疾险咨询..., 相似度范围: 0.586-0.654)
+2025-08-01 17:46:55,826 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:47:12,564 - ai_insurance - ERROR - agency_assistant.py:421 - JSON解析失败: Expecting ',' delimiter: line 9 column 14 (char 167)
+2025-08-01 17:47:12,566 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:47:12,579 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:47:19,212 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:47:20,225 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:47:22,940 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:47:23,295 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 重疾险咨询..., 相似度范围: 0.604-0.625)
+2025-08-01 17:47:23,295 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:47:36,050 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:47:36,055 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:47:44,256 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:47:45,270 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:47:47,324 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:47:47,742 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 重疾险咨询..., 相似度范围: 0.597-0.614)
+2025-08-01 17:47:47,743 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:48:02,676 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:48:02,683 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:48:09,796 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:48:10,825 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:48:13,792 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:48:14,098 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 重疾险咨询..., 相似度范围: 0.570-0.593)
+2025-08-01 17:48:14,098 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:48:28,604 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:48:28,614 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:48:36,833 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:48:37,865 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:48:40,530 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:48:40,832 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您看中的这个保障，我们超级重疾险都能提供，而且价格更优惠！ 重疾险咨询..., 相似度范围: 0.596-0.615)
+2025-08-01 17:48:40,832 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:48:56,052 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:48:56,066 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:49:03,132 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:49:04,152 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:49:07,605 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:49:07,984 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您看中的这个保障，我们超级重疾险都能提供，而且价格更优惠！ 重疾险咨询..., 相似度范围: 0.596-0.615)
+2025-08-01 17:49:07,985 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:49:24,287 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:49:24,296 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:49:35,125 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:49:36,152 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:49:38,250 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:49:38,608 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有特别优惠，而且100%报销，您还在犹豫什么呢？ 重疾险咨询..., 相似度范围: 0.601-0.619)
+2025-08-01 17:49:38,608 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:49:58,283 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:49:58,291 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:50:04,320 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:50:05,339 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:50:07,735 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:50:08,039 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款产品的理赔条件宽松是其他产品无法比拟的，性价比超高！ 重疾险咨询..., 相似度范围: 0.623-0.662)
+2025-08-01 17:50:08,039 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:50:22,008 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:50:22,020 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:50:28,902 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:50:29,917 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:50:33,883 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:50:34,228 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款超级重疾险真的非常适合您，首年保费极低，现在购买最划算！ 重疾险咨询..., 相似度范围: 0.589-0.607)
+2025-08-01 17:50:34,228 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:50:50,939 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:50:50,947 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:51:01,626 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:51:02,642 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:51:06,692 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:51:07,209 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款产品的理赔条件宽松是其他产品无法比拟的，性价比超高！ 重疾险咨询..., 相似度范围: 0.623-0.662)
+2025-08-01 17:51:07,211 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:51:21,202 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:51:21,205 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:51:27,926 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:51:28,941 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:51:31,374 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:51:31,676 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您看中的这个保障，我们超级重疾险都能提供，而且价格更优惠！ 重疾险咨询..., 相似度范围: 0.596-0.615)
+2025-08-01 17:51:31,676 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:51:50,194 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:51:50,204 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:52:01,717 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:52:02,730 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:52:06,311 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:52:06,629 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有特别优惠，而且100%报销，您还在犹豫什么呢？ 重疾险咨询..., 相似度范围: 0.601-0.619)
+2025-08-01 17:52:06,629 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:52:19,898 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:52:19,901 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:52:26,502 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:52:27,514 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:52:30,003 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:52:30,312 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款产品的理赔条件宽松是其他产品无法比拟的，性价比超高！ 重疾险咨询..., 相似度范围: 0.623-0.662)
+2025-08-01 17:52:30,312 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:52:47,006 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:52:47,012 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:52:54,173 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 17:52:55,187 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 17:52:57,508 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 17:52:57,822 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您看中的这个保障，我们超级重疾险都能提供，而且价格更优惠！ 重疾险咨询..., 相似度范围: 0.596-0.615)
+2025-08-01 17:52:57,822 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 17:53:21,707 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 17:53:21,718 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 17:53:27,533 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:35:05,754 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-08-01 18:35:06,919 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-08-01 18:35:06,920 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-08-01 18:36:09,957 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:36:15,163 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:36:15,513 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是万能医疗险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 医疗险..., 相似度范围: 0.564-0.589)
+2025-08-01 18:36:15,514 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:36:28,368 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:36:28,376 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:36:41,219 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-08-01 18:36:41,341 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-08-01 18:36:41,342 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-08-01 18:44:11,723 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:44:16,915 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:44:17,327 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是万能医疗险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 医疗险..., 相似度范围: 0.564-0.589)
+2025-08-01 18:44:17,328 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:44:31,677 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:44:31,690 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:44:37,073 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:44:38,088 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:44:40,024 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:44:40,344 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款万能医疗险可以完美解决您的担忧，而且现在购买还有额外优惠！ 医疗险咨..., 相似度范围: 0.616-0.657)
+2025-08-01 18:44:40,344 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:44:53,872 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:44:53,885 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:44:59,779 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:45:00,811 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:45:02,683 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:45:03,000 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款万能医疗险最大的优势就是无免赔额，而且不限医院，可以说是市面上最划算的产品了！ 医疗险保障范..., 相似度范围: 0.601-0.626)
+2025-08-01 18:45:03,000 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:45:16,032 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:45:16,038 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:45:23,101 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:45:24,130 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:45:28,042 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:45:28,406 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺终身保障，您还有什么顾虑吗？ 医疗险咨询..., 相似度范围: 0.595-0.612)
+2025-08-01 18:45:28,406 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:45:42,116 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:45:42,130 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:45:48,027 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:45:49,055 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:45:52,039 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:45:52,405 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 医疗险咨询..., 相似度范围: 0.606-0.634)
+2025-08-01 18:45:52,405 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:46:04,720 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:46:04,726 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:46:11,112 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:46:12,124 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:46:14,838 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:46:15,121 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 医疗险咨询..., 相似度范围: 0.569-0.599)
+2025-08-01 18:46:15,122 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:46:28,536 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:46:28,546 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:46:34,560 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:46:35,576 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:46:37,981 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:46:38,290 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款万能医疗险在价格和保障方面都有明显优势，性价比最高！ 医疗险咨询..., 相似度范围: 0.599-0.621)
+2025-08-01 18:46:38,290 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:46:54,175 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:46:54,183 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:47:00,672 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:47:01,682 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:47:04,108 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:47:04,410 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 医疗险咨询与理赔流程..., 相似度范围: 0.592-0.626)
+2025-08-01 18:47:04,411 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:47:17,992 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:47:18,001 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:47:22,976 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:47:23,994 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:47:28,648 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:47:28,990 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 理赔流程..., 相似度范围: 0.570-0.620)
+2025-08-01 18:47:28,990 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:47:42,699 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:47:42,705 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:47:48,688 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:47:49,706 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:47:53,456 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:47:53,771 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 理赔流程..., 相似度范围: 0.558-0.575)
+2025-08-01 18:47:53,771 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:48:07,719 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:48:07,729 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:48:13,499 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:48:14,515 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:48:16,368 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:48:16,681 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有特别优惠，而且终身保障，您还在犹豫什么呢？ 理赔流程..., 相似度范围: 0.571-0.584)
+2025-08-01 18:48:16,681 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:48:28,462 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:48:28,470 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:48:34,506 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:48:35,524 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:48:37,340 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:48:37,698 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有特别优惠，而且终身保障，您还在犹豫什么呢？ 理赔流程..., 相似度范围: 0.571-0.584)
+2025-08-01 18:48:37,701 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:48:49,976 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:48:49,985 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:48:55,927 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:48:56,955 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:48:59,024 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:48:59,534 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款万能医疗险真的非常适合您，无免赔额，现在购买最划算！ 理赔流程..., 相似度范围: 0.587-0.602)
+2025-08-01 18:48:59,536 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:49:13,627 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:49:13,635 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:49:21,833 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:49:22,856 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:49:24,698 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:49:25,060 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款产品的不限医院是其他产品无法比拟的，性价比超高！ 理赔流程..., 相似度范围: 0.604-0.624)
+2025-08-01 18:49:25,061 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:49:34,100 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:49:34,106 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:49:40,606 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:49:41,628 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:49:45,087 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:49:45,429 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户都选择了我们这款万能医疗险，反馈都很好，您还有什么疑问吗？ 医疗险咨询..., 相似度范围: 0.603-0.632)
+2025-08-01 18:49:45,430 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:49:57,989 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:49:58,002 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:50:05,188 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:50:06,215 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:50:08,454 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:50:08,771 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您看中的这个保障，我们万能医疗险都能提供，而且价格更优惠！ 医疗险咨询与理赔问题..., 相似度范围: 0.593-0.637)
+2025-08-01 18:50:08,771 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:50:22,918 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:50:22,930 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:50:28,232 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:50:29,247 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:50:31,790 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:50:32,138 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款万能医疗险真的非常适合您，无免赔额，现在购买最划算！ 医疗险咨询与理赔问题..., 相似度范围: 0.594-0.622)
+2025-08-01 18:50:32,138 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:50:43,974 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:50:43,982 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:50:50,929 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:50:51,945 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:50:55,476 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:50:55,802 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您看中的这个保障，我们万能医疗险都能提供，而且价格更优惠！ 医疗险产品咨询与理赔疑问..., 相似度范围: 0.592-0.637)
+2025-08-01 18:50:55,802 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:51:10,000 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:51:10,006 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:51:14,336 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:51:15,370 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:51:21,498 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:51:21,813 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款万能医疗险真的非常适合您，无免赔额，现在购买最划算！ 医疗险咨询..., 相似度范围: 0.586-0.618)
+2025-08-01 18:51:21,813 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:51:35,295 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:51:35,306 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 18:51:43,215 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 18:51:44,236 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 18:51:46,065 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 18:51:46,362 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款产品的不限医院是其他产品无法比拟的，性价比超高！ 医疗险产品咨询..., 相似度范围: 0.603-0.630)
+2025-08-01 18:51:46,362 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 18:51:55,876 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 18:51:55,885 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:45:22,839 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-08-01 19:45:25,447 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-08-01 19:45:25,449 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-08-01 19:45:59,272 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:46:03,440 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:46:04,091 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是万能医疗险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 医疗险..., 相似度范围: 0.564-0.589)
+2025-08-01 19:46:04,092 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:46:15,638 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:46:15,648 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:46:21,931 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:46:23,009 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:46:24,508 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:46:24,842 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款万能医疗险可以完美解决您的担忧，而且现在购买还有额外优惠！ 医疗险咨..., 相似度范围: 0.616-0.657)
+2025-08-01 19:46:24,842 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:46:37,107 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:46:37,123 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:46:42,685 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:46:43,704 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:46:45,432 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:46:45,766 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款万能医疗险最大的优势就是无免赔额，而且不限医院，可以说是市面上最划算的产品了！ 医疗险咨询..., 相似度范围: 0.600-0.618)
+2025-08-01 19:46:45,767 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:46:58,355 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:46:58,362 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:47:03,938 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:47:07,963 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:47:14,037 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:47:14,395 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是万能医疗险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 医疗险..., 相似度范围: 0.564-0.589)
+2025-08-01 19:47:14,395 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:47:25,337 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:47:25,349 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:47:31,844 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:47:32,862 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:47:35,752 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:47:36,350 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款万能医疗险可以完美解决您的担忧，而且现在购买还有额外优惠！ 医疗险咨..., 相似度范围: 0.616-0.657)
+2025-08-01 19:47:36,351 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:47:48,492 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:47:48,500 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:47:54,335 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:47:55,356 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:47:57,712 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:47:58,081 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款万能医疗险最大的优势就是无免赔额，而且不限医院，可以说是市面上最划算的产品了！ 医疗险保障范..., 相似度范围: 0.607-0.635)
+2025-08-01 19:47:58,082 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:48:10,504 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:48:10,513 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:48:15,707 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:48:19,733 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:48:22,092 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:48:22,420 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是万能医疗险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 医疗险..., 相似度范围: 0.564-0.589)
+2025-08-01 19:48:22,420 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:48:33,338 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:48:33,343 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:48:38,768 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:48:39,777 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:48:44,740 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:48:45,362 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款万能医疗险可以完美解决您的担忧，而且现在购买还有额外优惠！ 医疗险咨..., 相似度范围: 0.616-0.657)
+2025-08-01 19:48:45,363 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:48:57,023 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:48:57,028 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:49:02,022 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:49:03,075 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:49:04,786 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:49:05,101 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款万能医疗险最大的优势就是无免赔额，而且不限医院，可以说是市面上最划算的产品了！ 医疗险优势说..., 相似度范围: 0.611-0.638)
+2025-08-01 19:49:05,101 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:49:17,397 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:49:17,403 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:49:23,122 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:54:04,095 - ai_insurance - INFO - rag_pit_detector.py:151 - 初始化阿里云嵌入模型: text-embedding-v4
+2025-08-01 19:54:04,180 - ai_insurance - INFO - rag_pit_detector.py:259 - 成功加载向量数据库: data/vector_store/faiss_index
+2025-08-01 19:54:04,180 - ai_insurance - INFO - agency_assistant.py:65 - RAG坑点检索器初始化成功
+2025-08-01 19:54:31,999 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:54:37,668 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:54:38,105 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 19:54:38,105 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:54:49,460 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:54:49,478 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:54:54,511 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:54:55,523 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:54:57,933 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:54:58,261 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 保费咨询..., 相似度范围: 0.605-0.615)
+2025-08-01 19:54:58,261 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:55:10,813 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:55:10,820 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:55:15,702 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:55:16,719 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:55:18,323 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:55:18,627 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险咨询..., 相似度范围: 0.567-0.582)
+2025-08-01 19:55:18,627 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:55:33,228 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:55:33,234 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:55:38,752 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:55:39,765 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:55:42,829 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:55:43,151 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 19:55:43,152 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:55:56,620 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:55:56,625 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:56:02,541 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:56:03,591 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:56:06,160 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:56:06,495 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的收益..., 相似度范围: 0.606-0.617)
+2025-08-01 19:56:06,495 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:56:19,889 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:56:19,896 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:56:25,621 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:56:26,632 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:56:29,313 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:56:29,636 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的限时优惠及购买决策..., 相似度范围: 0.575-0.580)
+2025-08-01 19:56:29,636 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:56:41,098 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:56:41,106 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:56:46,726 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:56:47,743 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:56:50,093 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:56:50,456 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 寿险产品性价比分析..., 相似度范围: 0.592-0.641)
+2025-08-01 19:56:50,457 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:57:03,915 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:57:03,925 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:57:09,646 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:57:10,658 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:57:13,902 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:57:14,250 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险的收益与灵活性..., 相似度范围: 0.575-0.594)
+2025-08-01 19:57:14,250 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:57:26,456 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:57:26,463 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:57:31,877 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:57:32,895 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:57:35,148 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:57:35,580 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 投资型寿险咨询..., 相似度范围: 0.561-0.573)
+2025-08-01 19:57:35,580 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:57:48,809 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:57:48,815 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:57:54,299 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:57:55,428 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:57:58,178 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:57:58,497 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品性价比与真实性验证..., 相似度范围: 0.570-0.590)
+2025-08-01 19:57:58,497 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:58:11,201 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:58:11,208 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:58:16,415 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:58:20,446 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:58:21,995 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:58:22,360 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 19:58:22,361 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:58:34,358 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:58:34,367 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:58:40,550 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:58:41,558 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:58:47,209 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:58:47,486 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 保费费用..., 相似度范围: 0.599-0.607)
+2025-08-01 19:58:47,486 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:58:59,721 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:58:59,727 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:59:07,141 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:59:08,151 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:59:09,852 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:59:10,106 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险咨询..., 相似度范围: 0.567-0.582)
+2025-08-01 19:59:10,106 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:59:22,118 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:59:22,124 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:59:29,333 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:59:30,342 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:59:32,304 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:59:32,704 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 19:59:32,704 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 19:59:44,741 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 19:59:44,748 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 19:59:52,988 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 19:59:53,998 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 19:59:57,292 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 19:59:57,598 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的保障..., 相似度范围: 0.613-0.621)
+2025-08-01 19:59:57,599 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:00:09,738 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:00:09,746 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:00:17,219 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:00:18,234 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:00:21,037 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:00:21,323 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险咨询..., 相似度范围: 0.566-0.576)
+2025-08-01 20:00:21,323 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:00:34,247 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:00:34,255 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:00:41,222 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:00:42,239 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:00:44,879 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:00:45,207 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险咨询..., 相似度范围: 0.580-0.618)
+2025-08-01 20:00:45,208 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:00:58,724 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:00:58,731 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:01:07,641 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:01:08,656 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:01:11,204 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:01:11,723 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险咨询..., 相似度范围: 0.580-0.584)
+2025-08-01 20:01:11,723 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:01:24,529 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:01:24,537 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:01:32,422 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:01:33,434 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:01:35,906 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:01:36,190 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 保险产品对比与投资收益..., 相似度范围: 0.586-0.626)
+2025-08-01 20:01:36,190 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:01:45,519 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:01:45,526 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:01:52,594 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:01:53,606 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:01:56,192 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:01:56,538 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品性价比与购买决策..., 相似度范围: 0.558-0.582)
+2025-08-01 20:01:56,538 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:02:09,979 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:02:09,985 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:02:17,495 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:02:21,520 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:02:23,544 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:02:23,871 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:02:23,871 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:02:36,818 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:02:36,823 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:02:41,105 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:02:42,139 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:02:44,942 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:02:45,265 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 寿险咨询..., 相似度范围: 0.599-0.617)
+2025-08-01 20:02:45,266 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:02:58,329 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:02:58,336 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:03:03,880 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:03:04,889 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:03:06,626 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:03:06,927 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 寿险产品优势..., 相似度范围: 0.570-0.584)
+2025-08-01 20:03:06,927 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:03:18,559 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:03:18,561 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:03:24,924 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:03:25,935 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:03:27,988 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:03:28,258 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险的优惠与保障..., 相似度范围: 0.565-0.579)
+2025-08-01 20:03:28,258 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:03:42,277 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:03:42,286 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:03:48,312 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:03:49,321 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:03:52,719 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:03:53,025 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的保障..., 相似度范围: 0.601-0.610)
+2025-08-01 20:03:53,025 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:04:05,440 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:04:05,448 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:04:11,176 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:04:12,186 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:04:15,449 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:04:15,732 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的限时优惠及保障内容咨..., 相似度范围: 0.580-0.590)
+2025-08-01 20:04:15,733 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:04:27,734 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:04:27,748 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:04:33,351 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:04:34,366 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:04:37,163 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:04:37,460 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险咨询..., 相似度范围: 0.580-0.618)
+2025-08-01 20:04:37,460 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:04:50,479 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:04:50,486 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:04:56,188 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:04:57,069 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:04:59,436 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:04:59,743 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险咨询..., 相似度范围: 0.580-0.584)
+2025-08-01 20:04:59,744 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:05:16,600 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:05:16,612 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:05:22,203 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:05:23,218 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:05:26,303 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:05:26,634 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 保险产品促销与购买疑虑..., 相似度范围: 0.582-0.596)
+2025-08-01 20:05:26,635 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:05:38,479 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:05:38,485 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:05:43,709 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:05:44,725 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:05:47,179 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:05:47,602 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品性价比与购买决策..., 相似度范围: 0.558-0.582)
+2025-08-01 20:05:47,602 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:06:01,189 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:06:01,196 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:06:09,628 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:06:13,653 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:06:15,539 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:06:15,823 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:06:15,823 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:06:26,469 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:06:26,475 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:06:32,640 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:06:33,649 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:06:35,202 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:06:35,535 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 寿险咨询..., 相似度范围: 0.599-0.617)
+2025-08-01 20:06:35,536 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:06:46,975 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:06:46,981 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:06:52,921 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:06:53,930 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:06:56,557 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:06:56,890 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 寿险产品优势..., 相似度范围: 0.570-0.584)
+2025-08-01 20:06:56,890 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:07:10,443 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:07:10,454 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:07:16,707 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:07:17,718 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:07:20,879 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:07:21,149 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 20:07:21,150 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:07:34,174 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:07:34,180 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:07:40,858 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:07:41,882 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:07:44,997 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:07:45,313 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的保障..., 相似度范围: 0.604-0.612)
+2025-08-01 20:07:45,314 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:07:58,899 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:07:58,913 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:08:04,428 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:08:05,441 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:08:08,262 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:08:08,595 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的限时优惠和购买催促..., 相似度范围: 0.575-0.590)
+2025-08-01 20:08:08,595 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:08:19,918 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:08:19,925 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:08:27,062 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:08:28,074 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:08:31,433 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:08:31,740 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 寿险产品优势与购买..., 相似度范围: 0.592-0.620)
+2025-08-01 20:08:31,740 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:08:44,190 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:08:44,196 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:08:49,664 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:08:50,679 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:08:53,528 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:08:53,806 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险的收益与保障优势..., 相似度范围: 0.579-0.595)
+2025-08-01 20:08:53,807 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:09:06,042 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:09:06,048 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:09:11,899 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:09:12,913 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:09:16,888 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:09:17,201 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 投资型寿险产品优势与购买疑虑..., 相似度范围: 0.584-0.598)
+2025-08-01 20:09:17,201 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:09:29,762 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:09:29,772 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:09:35,773 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:09:36,789 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:09:40,455 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:09:40,733 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品性价比与购买决策..., 相似度范围: 0.558-0.582)
+2025-08-01 20:09:40,733 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:09:54,594 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:09:54,604 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:10:01,078 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:10:05,108 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:10:06,652 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:10:06,956 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:10:06,956 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:10:19,481 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:10:19,487 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:10:25,681 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:10:26,692 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:10:28,865 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:10:29,186 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 投资型寿..., 相似度范围: 0.595-0.609)
+2025-08-01 20:10:29,186 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:10:42,473 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:10:42,477 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:10:49,488 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:10:50,500 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:10:52,540 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:10:52,812 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险优势..., 相似度范围: 0.569-0.582)
+2025-08-01 20:10:52,812 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:11:03,853 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:11:03,863 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:11:10,946 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:11:11,958 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:11:14,301 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:11:14,643 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险的收益与优惠..., 相似度范围: 0.564-0.577)
+2025-08-01 20:11:14,643 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:11:27,395 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:11:27,405 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:11:35,028 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:11:36,056 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:11:38,625 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:11:38,999 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的收益..., 相似度范围: 0.607-0.621)
+2025-08-01 20:11:39,002 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:11:53,690 - ai_insurance - ERROR - agency_assistant.py:421 - JSON解析失败: Expecting ',' delimiter: line 10 column 13 (char 154)
+2025-08-01 20:11:53,691 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:11:53,696 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:12:00,384 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:12:01,396 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:12:06,411 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:12:06,720 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的限时优惠与产品细节确..., 相似度范围: 0.579-0.590)
+2025-08-01 20:12:06,721 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:12:20,752 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:12:20,763 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:12:28,305 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:12:29,318 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:12:31,947 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:12:32,241 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险咨询..., 相似度范围: 0.580-0.618)
+2025-08-01 20:12:32,242 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:12:47,644 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:12:47,650 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:12:54,971 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:12:55,987 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:13:02,210 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:13:02,547 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险产品咨询..., 相似度范围: 0.581-0.588)
+2025-08-01 20:13:02,548 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:13:13,603 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:13:13,610 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:13:20,340 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:13:21,350 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:13:24,576 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:13:24,895 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 保险产品比较与购买决策..., 相似度范围: 0.581-0.618)
+2025-08-01 20:13:24,896 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:13:38,919 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:13:38,924 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:13:46,003 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:13:47,022 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:13:49,391 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:13:49,690 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品比较与购买决策..., 相似度范围: 0.561-0.580)
+2025-08-01 20:13:49,690 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:14:08,342 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:14:08,348 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:14:16,205 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:14:20,230 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:14:22,559 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:14:22,872 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:14:22,873 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:14:35,547 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:14:35,554 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:14:40,590 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:14:41,598 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:14:43,692 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:14:44,026 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 保费与风..., 相似度范围: 0.600-0.613)
+2025-08-01 20:14:44,026 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:14:57,469 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:14:57,476 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:15:03,751 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:15:04,759 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:15:07,020 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:15:07,287 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 产品优势介绍..., 相似度范围: 0.564-0.569)
+2025-08-01 20:15:07,287 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:15:21,470 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:15:21,481 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:15:26,537 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:15:27,546 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:15:29,761 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:15:30,026 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险的收益与优惠..., 相似度范围: 0.564-0.577)
+2025-08-01 20:15:30,027 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:15:43,491 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:15:43,498 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:15:51,573 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:15:52,586 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:15:55,261 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:15:55,552 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的收益..., 相似度范围: 0.605-0.616)
+2025-08-01 20:15:55,552 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:16:06,772 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:16:06,784 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:16:12,452 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:16:13,464 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:16:15,542 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:16:15,894 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险咨询..., 相似度范围: 0.566-0.576)
+2025-08-01 20:16:15,894 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:16:26,410 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:16:26,414 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:16:32,125 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:16:33,188 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:16:36,405 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:16:36,732 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险的性价比..., 相似度范围: 0.582-0.624)
+2025-08-01 20:16:36,732 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:16:51,684 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:16:51,695 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:16:57,451 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:16:58,501 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:17:01,985 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:17:02,302 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险咨询..., 相似度范围: 0.580-0.584)
+2025-08-01 20:17:02,302 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:17:14,468 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:17:14,474 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:17:19,859 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:17:20,882 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:17:24,685 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:17:25,002 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 投资型寿险优惠与购买疑虑..., 相似度范围: 0.576-0.585)
+2025-08-01 20:17:25,002 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:17:39,448 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:17:39,453 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:17:45,572 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:17:46,585 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:17:48,842 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:17:49,159 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品性价比与优惠活动..., 相似度范围: 0.566-0.584)
+2025-08-01 20:17:49,160 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:18:01,579 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:18:01,589 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:18:07,195 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:18:11,215 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:18:15,134 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:18:15,417 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:18:15,418 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:18:27,859 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:18:27,871 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:18:33,437 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:18:34,447 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:18:36,145 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:18:36,392 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 寿险咨询..., 相似度范围: 0.599-0.617)
+2025-08-01 20:18:36,392 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:18:48,294 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:18:48,300 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:18:55,670 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:18:56,685 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:18:58,545 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:18:58,806 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 寿险咨询..., 相似度范围: 0.563-0.577)
+2025-08-01 20:18:58,806 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:19:13,696 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:19:13,702 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:19:19,264 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:19:20,292 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:19:26,779 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:19:27,040 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 20:19:27,040 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:19:40,242 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:19:40,251 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:19:45,169 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:19:46,181 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:19:48,320 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:19:48,649 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险咨询..., 相似度范围: 0.596-0.606)
+2025-08-01 20:19:48,649 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:20:03,379 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:20:03,386 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:20:08,712 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:20:09,724 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:20:11,976 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:20:12,281 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的限时优惠及产品细节..., 相似度范围: 0.578-0.590)
+2025-08-01 20:20:12,281 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:20:25,257 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:20:25,265 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:20:31,001 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:20:32,014 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:20:35,205 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:20:35,560 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险咨询..., 相似度范围: 0.580-0.618)
+2025-08-01 20:20:35,561 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:20:48,847 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:20:48,855 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:20:54,647 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:20:55,661 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:20:58,158 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:20:58,523 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险咨询..., 相似度范围: 0.580-0.584)
+2025-08-01 20:20:58,523 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:21:09,914 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:21:09,922 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:21:16,587 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:21:17,606 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:21:20,380 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:21:20,781 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 保险产品优势与签单促成..., 相似度范围: 0.569-0.594)
+2025-08-01 20:21:20,781 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:21:32,207 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:21:32,215 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:21:37,581 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:21:38,594 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:21:41,160 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:21:41,428 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品性价比与购买决策..., 相似度范围: 0.558-0.582)
+2025-08-01 20:21:41,428 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:21:55,648 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:21:55,660 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:22:01,865 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:22:05,897 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:22:09,113 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:22:09,464 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:22:09,464 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:22:23,465 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:22:23,470 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:22:28,984 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:22:29,992 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:22:32,424 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:22:32,749 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 寿险咨询..., 相似度范围: 0.599-0.617)
+2025-08-01 20:22:32,750 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:22:46,081 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:22:46,088 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:22:53,483 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:22:54,491 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:22:56,530 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:22:56,869 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险咨询..., 相似度范围: 0.567-0.582)
+2025-08-01 20:22:56,869 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:23:10,718 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:23:10,729 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:23:17,024 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:23:18,036 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:23:20,805 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:23:21,099 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 20:23:21,099 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:23:34,635 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:23:34,642 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:23:40,611 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:23:41,621 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:23:44,380 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:23:44,759 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的收益..., 相似度范围: 0.596-0.610)
+2025-08-01 20:23:44,760 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:23:58,201 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:23:58,210 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:24:04,110 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:24:05,120 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:24:08,029 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:24:08,358 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的保费与优惠..., 相似度范围: 0.564-0.571)
+2025-08-01 20:24:08,358 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:24:21,030 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:24:21,042 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:24:27,859 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:24:28,871 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:24:31,752 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:24:32,120 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险咨询..., 相似度范围: 0.580-0.618)
+2025-08-01 20:24:32,120 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:24:47,383 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:24:47,389 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:24:53,698 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:24:54,712 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:24:58,481 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:24:58,861 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险咨询..., 相似度范围: 0.580-0.584)
+2025-08-01 20:24:58,862 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:25:11,512 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:25:11,523 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:25:17,039 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:25:18,056 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:25:20,655 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:25:20,951 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 投资型寿险产品对比与疑虑解答..., 相似度范围: 0.595-0.604)
+2025-08-01 20:25:20,951 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:25:35,354 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:25:35,359 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:25:42,219 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:25:43,231 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:25:46,237 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:25:46,558 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 投资型寿险产品对比与购买疑虑..., 相似度范围: 0.584-0.610)
+2025-08-01 20:25:46,559 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:26:01,827 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:26:01,836 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:26:08,758 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:26:12,782 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:26:14,672 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:26:14,966 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:26:14,966 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:26:28,682 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:26:28,688 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:26:36,383 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:26:37,398 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:26:39,285 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:26:39,635 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 投资型寿..., 相似度范围: 0.595-0.609)
+2025-08-01 20:26:39,635 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:26:54,402 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:26:54,408 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:27:01,910 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:27:02,927 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:27:05,581 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:27:05,921 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险咨询..., 相似度范围: 0.567-0.582)
+2025-08-01 20:27:05,922 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:27:22,184 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:27:22,190 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:27:29,715 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:27:30,729 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:27:34,312 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:27:34,658 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险的保障与收益..., 相似度范围: 0.568-0.580)
+2025-08-01 20:27:34,658 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:27:46,722 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:27:46,736 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:27:53,247 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:27:54,273 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:27:58,423 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:27:58,742 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的保障..., 相似度范围: 0.606-0.617)
+2025-08-01 20:27:58,743 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:28:13,052 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:28:13,060 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:28:19,796 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:28:20,817 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:28:25,238 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:28:25,559 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的保障与收益细节..., 相似度范围: 0.581-0.585)
+2025-08-01 20:28:25,559 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:28:37,862 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:28:37,868 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:28:45,214 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:28:46,230 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:28:49,048 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:28:49,347 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险咨询..., 相似度范围: 0.580-0.618)
+2025-08-01 20:28:49,348 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:29:05,285 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:29:05,294 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:29:12,848 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:29:13,863 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:29:20,669 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:29:20,941 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险咨询..., 相似度范围: 0.580-0.584)
+2025-08-01 20:29:20,941 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:29:33,670 - ai_insurance - ERROR - agency_assistant.py:421 - JSON解析失败: Expecting ',' delimiter: line 9 column 14 (char 152)
+2025-08-01 20:29:33,671 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:29:33,677 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:29:40,895 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:29:41,908 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:29:45,306 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:29:45,643 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 保险产品优势与签单促成..., 相似度范围: 0.569-0.594)
+2025-08-01 20:29:45,644 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:29:58,956 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:29:58,964 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:30:06,533 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:30:07,547 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:30:11,033 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:30:11,360 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险促销与签单促成..., 相似度范围: 0.541-0.554)
+2025-08-01 20:30:11,361 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:30:23,332 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:30:23,338 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:30:30,794 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:30:34,819 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:30:36,755 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:30:37,091 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:30:37,091 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:30:49,882 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:30:49,891 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:30:54,618 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:30:55,631 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:30:57,527 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:30:57,864 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 寿险咨询..., 相似度范围: 0.599-0.617)
+2025-08-01 20:30:57,864 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:31:13,014 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:31:13,020 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:31:18,847 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:31:19,874 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:31:27,374 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:31:27,684 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 寿险产品优势..., 相似度范围: 0.570-0.584)
+2025-08-01 20:31:27,685 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:31:39,067 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:31:39,074 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:31:44,883 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:31:45,903 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:31:48,522 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:31:48,869 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 20:31:48,870 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:31:59,997 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:32:00,010 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:32:05,756 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:32:06,768 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:32:09,690 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:32:09,980 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的收益..., 相似度范围: 0.603-0.616)
+2025-08-01 20:32:09,981 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:32:24,265 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:32:24,273 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:32:30,503 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:32:31,511 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:32:34,304 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:32:34,644 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的限时优惠及保障细节..., 相似度范围: 0.579-0.589)
+2025-08-01 20:32:34,644 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:32:46,229 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:32:46,239 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:32:52,052 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:32:53,080 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:32:55,910 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:32:56,293 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 寿险产品咨询..., 相似度范围: 0.583-0.621)
+2025-08-01 20:32:56,293 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:33:11,167 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:33:11,177 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:33:17,572 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:33:18,586 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:33:21,583 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:33:21,891 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险咨询..., 相似度范围: 0.580-0.584)
+2025-08-01 20:33:21,891 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:33:35,350 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:33:35,355 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:33:40,881 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:33:41,893 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:33:44,916 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:33:45,238 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 寿险产品咨询与疑虑处理..., 相似度范围: 0.570-0.581)
+2025-08-01 20:33:45,239 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:33:57,356 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:33:57,361 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:34:02,997 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:34:04,014 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:34:06,391 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:34:06,743 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 寿险产品咨询与签单促成..., 相似度范围: 0.561-0.574)
+2025-08-01 20:34:06,743 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:34:21,105 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:34:21,117 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:34:27,299 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:34:31,317 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:34:33,081 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:34:33,363 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:34:33,363 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:34:46,504 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:34:46,515 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:34:51,872 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:34:52,882 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:34:56,639 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:34:56,902 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 保费计算..., 相似度范围: 0.597-0.607)
+2025-08-01 20:34:56,902 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:35:09,323 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:35:09,332 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:35:14,785 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:35:15,796 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:35:17,482 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:35:17,780 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 寿险产品优势介..., 相似度范围: 0.573-0.584)
+2025-08-01 20:35:17,781 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:35:29,562 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:35:29,569 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:35:34,730 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:35:35,741 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:35:37,937 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:35:38,263 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 20:35:38,264 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:35:53,268 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:35:53,275 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:35:59,919 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:36:00,933 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:36:03,500 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:36:03,822 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 保障范围确认..., 相似度范围: 0.581-0.584)
+2025-08-01 20:36:03,823 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:36:16,549 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:36:16,555 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:36:22,103 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:36:23,114 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:36:26,600 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:36:26,877 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的保障范围和优惠说明..., 相似度范围: 0.576-0.584)
+2025-08-01 20:36:26,878 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:36:45,707 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:36:45,713 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:36:52,779 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:36:53,798 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:36:55,896 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:36:56,170 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险保障范围..., 相似度范围: 0.587-0.629)
+2025-08-01 20:36:56,170 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:37:12,467 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:37:12,474 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:37:18,467 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:37:19,478 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:37:22,768 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:37:23,069 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险保障内容咨询..., 相似度范围: 0.584-0.593)
+2025-08-01 20:37:23,069 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:37:36,335 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:37:36,342 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:37:41,922 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:37:42,938 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:37:45,334 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:37:45,613 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 保险产品比较与选择..., 相似度范围: 0.577-0.619)
+2025-08-01 20:37:45,613 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:37:58,190 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:37:58,199 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:38:03,760 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:38:04,773 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:38:08,040 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:38:08,330 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品比较与购买决策..., 相似度范围: 0.561-0.580)
+2025-08-01 20:38:08,330 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:38:24,713 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:38:24,725 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:38:30,038 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:38:34,061 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:38:35,569 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:38:35,884 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:38:35,884 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:38:46,674 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:38:46,681 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:38:51,453 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:38:52,465 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:38:54,749 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:38:55,086 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 保费咨询..., 相似度范围: 0.602-0.616)
+2025-08-01 20:38:55,086 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:39:07,620 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:39:07,628 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:39:13,467 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:39:14,482 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:39:16,195 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:39:16,526 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险咨询..., 相似度范围: 0.567-0.582)
+2025-08-01 20:39:16,526 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:39:27,846 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:39:27,852 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:39:33,647 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:39:34,658 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:39:36,456 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:39:36,720 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 20:39:36,720 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:39:50,816 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:39:50,825 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:39:56,626 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:39:57,634 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:39:59,769 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:40:00,048 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的保障..., 相似度范围: 0.606-0.618)
+2025-08-01 20:40:00,049 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:40:17,700 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:40:17,708 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:40:23,941 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:40:24,953 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:40:26,983 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:40:27,294 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的限时优惠与保障范围..., 相似度范围: 0.581-0.601)
+2025-08-01 20:40:27,294 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:40:38,964 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:40:38,972 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:40:44,374 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:40:45,399 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:40:47,913 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:40:48,205 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险咨询..., 相似度范围: 0.580-0.618)
+2025-08-01 20:40:48,205 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:41:01,711 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:41:01,721 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:41:07,810 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:41:08,822 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:41:11,581 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:41:11,875 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险的保障与销售疑虑..., 相似度范围: 0.589-0.603)
+2025-08-01 20:41:11,875 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:41:27,519 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:41:27,524 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:41:34,103 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:41:35,116 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:41:38,720 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:41:38,996 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 保险产品对比与理赔担虑..., 相似度范围: 0.593-0.656)
+2025-08-01 20:41:38,996 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:41:51,799 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:41:51,807 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:41:55,602 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:41:56,615 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:41:58,636 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:41:59,003 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品对比与购买决策..., 相似度范围: 0.569-0.587)
+2025-08-01 20:41:59,004 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:42:14,210 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:42:14,215 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:42:20,319 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:42:24,350 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:42:27,531 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:42:27,804 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:42:27,805 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:42:40,491 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:42:40,497 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:42:47,022 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:42:48,033 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:42:49,751 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:42:50,038 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 寿险咨询..., 相似度范围: 0.599-0.617)
+2025-08-01 20:42:50,038 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:43:03,453 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:43:03,460 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:43:10,000 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:43:11,013 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:43:13,611 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:43:13,889 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险咨询..., 相似度范围: 0.567-0.582)
+2025-08-01 20:43:13,890 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:43:25,889 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:43:25,895 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:43:33,143 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:43:34,155 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:43:36,263 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:43:36,565 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 20:43:36,566 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:43:49,918 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:43:49,930 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:43:57,313 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:43:58,326 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:44:01,336 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:44:01,636 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的保障..., 相似度范围: 0.610-0.621)
+2025-08-01 20:44:01,637 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:44:16,503 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:44:16,510 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:44:22,681 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:44:23,690 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:44:26,655 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:44:26,974 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的收益与风险..., 相似度范围: 0.563-0.574)
+2025-08-01 20:44:26,974 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:44:38,972 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:44:38,983 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:44:46,899 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:44:47,913 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:44:50,903 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:44:51,228 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 寿险产品优势与促销..., 相似度范围: 0.579-0.617)
+2025-08-01 20:44:51,229 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:45:06,230 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:45:06,247 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:45:15,225 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:45:16,243 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:45:19,196 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:45:19,552 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险的收益、费用与合规性问题..., 相似度范围: 0.592-0.601)
+2025-08-01 20:45:19,553 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:45:33,101 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:45:33,114 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:45:40,161 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:45:41,188 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:45:45,506 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:45:45,786 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 保险产品促销与合规性..., 相似度范围: 0.575-0.594)
+2025-08-01 20:45:45,787 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:45:58,431 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:45:58,438 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:46:05,582 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:46:06,594 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:46:12,349 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:46:12,643 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品性价比与购买决策..., 相似度范围: 0.558-0.582)
+2025-08-01 20:46:12,644 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:46:25,672 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:46:25,686 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:46:33,296 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:46:37,328 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:46:41,398 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:46:41,739 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:46:41,740 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:46:55,618 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:46:55,625 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:47:02,528 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:47:03,539 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:47:05,740 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:47:06,037 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 投资型寿..., 相似度范围: 0.595-0.609)
+2025-08-01 20:47:06,038 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:47:20,342 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:47:20,353 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:47:26,773 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:47:27,786 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:47:29,870 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:47:30,155 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险产品..., 相似度范围: 0.557-0.562)
+2025-08-01 20:47:30,155 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:47:43,323 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:47:43,333 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:47:50,127 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:47:51,140 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:47:54,876 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:47:55,140 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 20:47:55,141 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:48:08,154 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:48:08,165 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:48:16,755 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:48:17,769 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:48:20,781 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:48:21,062 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险咨询..., 相似度范围: 0.596-0.606)
+2025-08-01 20:48:21,063 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:48:34,742 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:48:34,750 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:48:42,111 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:48:43,123 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:48:46,170 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:48:46,484 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险咨询..., 相似度范围: 0.566-0.576)
+2025-08-01 20:48:46,485 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:48:59,852 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:48:59,861 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:49:07,003 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:49:08,013 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:49:10,802 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:49:11,104 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险咨询..., 相似度范围: 0.580-0.618)
+2025-08-01 20:49:11,105 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:49:27,108 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:49:27,126 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:49:35,308 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:49:36,321 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:49:38,722 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:49:39,018 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 担心理赔..., 相似度范围: 0.559-0.594)
+2025-08-01 20:49:39,018 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:49:51,536 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:49:51,547 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:49:58,168 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:49:59,178 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:50:01,796 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:50:02,088 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 限时优惠与VIP服务..., 相似度范围: 0.510-0.542)
+2025-08-01 20:50:02,089 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:50:16,387 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:50:16,393 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:50:23,504 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:50:24,521 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:50:28,068 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:50:28,362 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品性价比与用户疑虑沟通..., 相似度范围: 0.572-0.598)
+2025-08-01 20:50:28,362 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:50:40,893 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:50:40,905 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:50:48,478 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:50:52,508 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:50:54,094 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:50:54,419 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:50:54,419 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:51:05,508 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:51:05,539 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:51:11,108 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:51:12,120 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:51:14,224 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:51:14,620 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 寿险咨询..., 相似度范围: 0.599-0.617)
+2025-08-01 20:51:14,620 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:51:27,591 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:51:27,598 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:51:34,127 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:51:35,136 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:51:37,712 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:51:38,002 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险咨询..., 相似度范围: 0.567-0.582)
+2025-08-01 20:51:38,003 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:51:50,633 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:51:50,639 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:51:57,479 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:51:58,492 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:52:00,834 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:52:01,086 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 20:52:01,087 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:52:14,069 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:52:14,075 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:52:20,844 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:52:21,860 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:52:24,310 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:52:24,583 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险咨询..., 相似度范围: 0.596-0.606)
+2025-08-01 20:52:24,583 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:52:37,635 - ai_insurance - ERROR - agency_assistant.py:421 - JSON解析失败: Expecting ',' delimiter: line 8 column 13 (char 121)
+2025-08-01 20:52:37,637 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:52:37,641 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:52:45,379 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:52:46,395 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:52:48,565 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:52:48,870 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险咨询..., 相似度范围: 0.566-0.576)
+2025-08-01 20:52:48,871 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:53:01,326 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:53:01,336 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:53:06,769 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:53:07,781 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:53:10,282 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:53:10,577 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险咨询..., 相似度范围: 0.580-0.618)
+2025-08-01 20:53:10,577 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:53:25,800 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:53:25,807 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:53:31,957 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:53:32,970 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:53:35,641 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:53:35,953 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险咨询..., 相似度范围: 0.580-0.584)
+2025-08-01 20:53:35,954 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:53:48,621 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:53:48,628 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:53:54,424 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:53:55,438 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:53:58,110 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:53:58,459 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 投资型寿险产品对比与购买疑虑..., 相似度范围: 0.590-0.603)
+2025-08-01 20:53:58,459 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:54:11,217 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:54:11,222 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:54:17,488 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:54:18,504 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:54:21,253 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:54:21,630 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 投资型寿险咨询..., 相似度范围: 0.560-0.581)
+2025-08-01 20:54:21,630 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:54:36,703 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:54:36,710 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:54:42,423 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:54:46,457 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:54:48,407 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:54:48,807 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:54:48,807 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:55:01,233 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:55:01,250 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:55:06,114 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:55:07,138 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:55:10,019 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:55:10,324 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 寿险咨询..., 相似度范围: 0.607-0.623)
+2025-08-01 20:55:10,324 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:55:23,155 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:55:23,159 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:55:28,013 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:55:29,026 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:55:32,210 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:55:32,536 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险优势..., 相似度范围: 0.572-0.582)
+2025-08-01 20:55:32,536 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:55:44,522 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:55:44,528 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:55:50,834 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:55:51,844 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:55:53,851 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:55:54,167 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险的限时优惠与..., 相似度范围: 0.569-0.584)
+2025-08-01 20:55:54,167 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:56:07,394 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:56:07,398 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:56:15,377 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:56:16,388 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:56:18,391 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:56:18,713 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的收益..., 相似度范围: 0.604-0.617)
+2025-08-01 20:56:18,713 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:56:33,557 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:56:33,566 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:56:39,258 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:56:40,267 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:56:42,394 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:56:42,724 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险咨询..., 相似度范围: 0.566-0.576)
+2025-08-01 20:56:42,724 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:56:55,905 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:56:55,916 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:57:01,714 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:57:02,728 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:57:05,972 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:57:06,305 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险的保障范..., 相似度范围: 0.579-0.616)
+2025-08-01 20:57:06,305 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:57:23,549 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:57:23,554 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:57:29,432 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:57:30,456 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:57:33,174 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:57:33,561 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险咨询..., 相似度范围: 0.580-0.584)
+2025-08-01 20:57:33,561 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:57:48,007 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:57:48,016 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:57:53,543 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:57:54,566 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:57:57,206 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:57:57,496 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 理赔流程和产品可靠性..., 相似度范围: 0.581-0.620)
+2025-08-01 20:57:57,497 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:58:10,534 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:58:10,540 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:58:16,230 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:58:17,242 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:58:20,060 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:58:20,341 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 重疾险咨询..., 相似度范围: 0.570-0.593)
+2025-08-01 20:58:20,341 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:58:35,932 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:58:35,939 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:58:43,099 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:58:47,134 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:58:48,618 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:58:48,902 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 20:58:48,903 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:59:06,082 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:59:06,091 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:59:11,095 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:59:12,106 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:59:15,189 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:59:15,515 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 保费咨询..., 相似度范围: 0.602-0.616)
+2025-08-01 20:59:15,515 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:59:28,872 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:59:28,878 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:59:35,209 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 20:59:36,219 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 20:59:38,375 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 20:59:38,642 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险咨询..., 相似度范围: 0.567-0.582)
+2025-08-01 20:59:38,642 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 20:59:52,881 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 20:59:52,892 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 20:59:59,394 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:00:00,406 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:00:04,385 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:00:04,703 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险的限时优惠与..., 相似度范围: 0.571-0.585)
+2025-08-01 21:00:04,703 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:00:16,731 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:00:16,741 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:00:23,882 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:00:24,905 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:00:27,979 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:00:28,291 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的保障..., 相似度范围: 0.606-0.618)
+2025-08-01 21:00:28,291 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:00:47,104 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:00:47,111 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:00:53,466 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:00:54,477 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:00:56,674 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:00:56,945 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的限时优惠与保障细节..., 相似度范围: 0.579-0.590)
+2025-08-01 21:00:56,945 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:01:06,833 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:01:06,838 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:01:11,996 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:01:13,008 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:01:16,938 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:01:17,241 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险的保障范..., 相似度范围: 0.579-0.616)
+2025-08-01 21:01:17,242 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:01:36,837 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:01:36,846 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:01:43,982 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:01:44,997 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:01:47,432 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:01:47,815 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险咨询..., 相似度范围: 0.580-0.584)
+2025-08-01 21:01:47,815 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:02:00,766 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:02:00,774 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:02:07,250 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:02:08,279 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:02:11,499 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:02:11,820 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 投资型寿险产品优势与购买决策..., 相似度范围: 0.576-0.583)
+2025-08-01 21:02:11,821 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:02:23,858 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:02:23,866 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:02:30,349 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:02:31,360 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:02:34,672 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:02:34,975 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 寿险产品推荐与销售..., 相似度范围: 0.568-0.588)
+2025-08-01 21:02:34,975 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:02:49,194 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:02:49,205 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:02:55,344 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:02:59,384 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:03:01,233 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:03:01,567 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 21:03:01,568 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:03:15,140 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:03:15,146 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:03:20,932 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:03:21,950 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:03:23,901 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:03:24,208 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 寿险咨询..., 相似度范围: 0.599-0.617)
+2025-08-01 21:03:24,208 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:03:37,161 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:03:37,167 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:03:43,928 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:03:44,944 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:03:47,097 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:03:47,366 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险优势..., 相似度范围: 0.572-0.582)
+2025-08-01 21:03:47,366 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:03:59,793 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:03:59,804 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:04:06,504 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:04:07,520 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:04:10,031 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:04:10,368 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险的收益与优惠..., 相似度范围: 0.564-0.577)
+2025-08-01 21:04:10,368 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:04:24,047 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:04:24,058 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:04:31,006 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:04:32,021 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:04:35,578 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:04:35,952 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的保障..., 相似度范围: 0.607-0.619)
+2025-08-01 21:04:35,952 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:04:53,033 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:04:53,042 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:05:00,395 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:05:01,408 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:05:04,571 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:05:04,877 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险咨询..., 相似度范围: 0.566-0.576)
+2025-08-01 21:05:04,877 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:05:19,801 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:05:19,806 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:05:26,792 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:05:27,805 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:05:30,790 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:05:31,100 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险咨询..., 相似度范围: 0.580-0.618)
+2025-08-01 21:05:31,100 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:05:46,401 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:05:46,412 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:05:52,161 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:05:53,173 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:05:57,838 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:05:58,126 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险的收益与保障优化..., 相似度范围: 0.577-0.587)
+2025-08-01 21:05:58,126 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:06:12,742 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:06:12,751 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:06:18,585 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:06:19,597 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:06:22,257 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:06:22,606 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 保险产品优势与购买决策..., 相似度范围: 0.574-0.590)
+2025-08-01 21:06:22,607 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:06:36,020 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:06:36,030 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:06:42,956 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:06:43,968 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:06:46,404 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:06:46,696 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品性价比对比及购买决策..., 相似度范围: 0.569-0.601)
+2025-08-01 21:06:46,697 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:06:59,959 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:06:59,965 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:07:06,444 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:07:10,481 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:07:12,109 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:07:12,398 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 21:07:12,398 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:07:24,698 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:07:24,706 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:07:31,529 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:07:32,562 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:07:35,802 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:07:36,303 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 投资型寿..., 相似度范围: 0.595-0.609)
+2025-08-01 21:07:36,303 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:07:49,763 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:07:49,777 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:07:56,547 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:07:57,566 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:07:59,860 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:08:00,146 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险咨询..., 相似度范围: 0.567-0.582)
+2025-08-01 21:08:00,147 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:08:12,850 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:08:12,859 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:08:20,088 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:08:21,103 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:08:24,454 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:08:24,762 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 21:08:24,762 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:08:37,322 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:08:37,333 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:08:45,420 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:08:46,496 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:08:49,728 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:08:50,037 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的运作..., 相似度范围: 0.600-0.607)
+2025-08-01 21:08:50,038 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:09:04,794 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:09:04,800 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:09:11,134 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:09:12,144 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:09:16,492 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:09:16,832 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的限时优惠与保障机制..., 相似度范围: 0.582-0.595)
+2025-08-01 21:09:16,833 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:09:28,311 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:09:28,316 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:09:36,732 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:09:37,751 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:09:40,737 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:09:41,086 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险咨询..., 相似度范围: 0.580-0.618)
+2025-08-01 21:09:41,086 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:09:57,520 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:09:57,527 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:10:04,287 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:10:05,337 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:10:08,885 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:10:09,188 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险咨询..., 相似度范围: 0.580-0.584)
+2025-08-01 21:10:09,188 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:10:20,338 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:10:20,351 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:10:29,038 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:10:30,052 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:10:33,360 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:10:33,692 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 保险产品优势与签单促成..., 相似度范围: 0.569-0.594)
+2025-08-01 21:10:33,692 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:10:49,678 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:10:49,687 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:11:03,391 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:11:04,407 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:11:07,412 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:11:07,802 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品对比与购买决策..., 相似度范围: 0.569-0.587)
+2025-08-01 21:11:07,802 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:11:23,939 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:11:23,947 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:11:30,482 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:11:34,500 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:11:36,216 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:11:36,635 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您好！我是投资型寿险的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？ 产品介..., 相似度范围: 0.549-0.598)
+2025-08-01 21:11:36,636 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:11:49,535 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:11:49,546 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:11:58,438 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:11:59,448 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:12:02,662 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:12:02,972 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您平时最担心什么风险呢？我们这款投资型寿险可以完美解决您的担忧，而且现在购买还有额外优惠！ 投资型寿..., 相似度范围: 0.595-0.609)
+2025-08-01 21:12:02,972 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:12:17,323 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:12:17,334 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:12:25,674 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:12:26,686 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:12:29,072 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:12:29,356 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 我们这款投资型寿险最大的优势就是高收益，而且灵活取现，可以说是市面上最划算的产品了！ 投资型寿险咨询..., 相似度范围: 0.567-0.582)
+2025-08-01 21:12:29,356 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:12:41,934 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:12:41,943 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:12:49,576 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:12:50,585 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:12:53,856 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:12:54,127 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在购买还有限时优惠，错过就没有了！而且我们承诺免税优惠，您还有什么顾虑吗？ 投资型寿险咨询..., 相似度范围: 0.565-0.578)
+2025-08-01 21:12:54,127 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:13:06,468 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:13:06,479 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:13:12,756 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:13:13,767 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:13:16,277 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:13:16,579 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！ 投资型寿险的保障..., 相似度范围: 0.607-0.615)
+2025-08-01 21:13:16,580 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:13:30,425 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:13:30,437 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:13:39,863 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:13:40,875 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:13:44,042 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:13:44,338 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！ 投资型寿险的限时优惠与保障细节..., 相似度范围: 0.579-0.590)
+2025-08-01 21:13:44,338 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:13:58,013 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:13:58,020 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:14:07,379 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:14:08,390 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:14:13,735 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:14:14,029 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 相比其他公司的产品，我们这款投资型寿险在价格和保障方面都有明显优势，性价比最高！ 投资型寿险的保障与..., 相似度范围: 0.581-0.612)
+2025-08-01 21:14:14,030 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:14:30,847 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:14:30,854 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:14:39,848 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:14:40,860 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:14:43,448 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:14:43,763 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！ 投资型寿险产品咨询..., 相似度范围: 0.581-0.588)
+2025-08-01 21:14:43,764 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:15:00,356 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:15:00,365 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:15:10,366 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:15:11,382 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:15:16,586 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:15:16,903 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！ 投资型寿险咨询与产品对比..., 相似度范围: 0.575-0.598)
+2025-08-01 21:15:16,904 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:15:29,956 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:15:29,961 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:15:37,386 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
+2025-08-01 21:15:38,406 - ai_insurance - INFO - agency_assistant.py:113 - 开始分析经纪人话语意图
+2025-08-01 21:15:41,445 - ai_insurance - INFO - agency_assistant.py:295 - 生成助理建议
+2025-08-01 21:15:41,718 - ai_insurance - INFO - rag_pit_detector.py:372 - 检索到 5 个相关坑点 (查询: 这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！ 保险产品性价比与条款透明度..., 相似度范围: 0.572-0.597)
+2025-08-01 21:15:41,719 - ai_insurance - INFO - agency_assistant.py:332 - 检索到 5 个相关坑点
+2025-08-01 21:15:59,494 - ai_insurance - INFO - agency_assistant.py:451 - 建议生成已融入RAG坑点检索结果
+2025-08-01 21:15:59,506 - ai_insurance - INFO - agency_assistant.py:243 - 生成AI用户回应
+2025-08-01 21:16:07,978 - ai_insurance - INFO - agency_assistant.py:478 - 完成智能对话助理分析
