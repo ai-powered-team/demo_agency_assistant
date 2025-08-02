@@ -85,7 +85,7 @@ def main():
             if test_results:
                 print("📝 示例检索结果:")
                 for i, doc in enumerate(test_results[:2], 1):
-                    title = doc.metadata.get("标题", "未知")
+                    title = doc.metadata.get("title", "未知")
                     category = doc.metadata.get("category", "未分类")
                     print(f"   {i}. 【{category}】{title}")
         else:

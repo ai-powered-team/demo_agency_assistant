@@ -33,6 +33,8 @@ class AgencyAssistantState(TypedDict):
     user_response: str
     suggestions: Optional[List[str]]
     error_message: Optional[str]
+    previous_stage_intent: Optional[str]  # 上一回合的阶段性意图
+    retrieved_pits: Optional[List[dict]]  # 检索到的坑点信息
 
 
 class AgencyAssistant:
@@ -55,8 +57,9 @@ class AgencyAssistant:
         self.qwen = ChatOpenAI(
             api_key=SecretStr(config.QWEN_API_KEY),
             base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
-            model="qwen-plus",
-            temperature=0.3
+            model="qwen3-30b-a3b",
+            temperature=0.3,
+            extra_body={"enable_thinking": False}
         )
         
         # 初始化RAG坑点检索器
@@ -114,6 +117,7 @@ class AgencyAssistant:
 
         broker_input = state["broker_input"]
         conversation_history = state.get("conversation_history", [])
+        previous_stage_intent = state.get("previous_stage_intent")
         
         # 构建对话上下文（最近5轮对话）
         context_messages = []
@@ -123,12 +127,30 @@ class AgencyAssistant:
         
         context = "\n".join(context_messages)
 
+        # 构建阶段性意图连续性提示
+        stage_continuity_prompt = ""
+        if previous_stage_intent:
+            stage_continuity_prompt = f"""
+
+重要提示：上一回合经纪人的阶段性意图是"{previous_stage_intent}"。
+请特别注意：
+1. 如果当前话语与上一回合的阶段性意图基本一致或变化不大，请保持相同的阶段性意图
+2. 只有当当前话语明显表明经纪人进入了新的销售阶段时，才更新阶段性意图
+3. 阶段性意图应该相对稳定，避免频繁变化
+
+常见的销售阶段包括：
+- "需求了解"：了解客户需求和基本情况
+- "产品介绍"：介绍具体产品特点和优势
+- "异议处理"：处理客户的疑虑和反对意见
+- "促成签单"：推动客户做出购买决定
+- "售后服务"：处理购买后的相关事宜"""
+
         prompt = f"""分析保险经纪人话语的意图，返回JSON格式：
 
 经纪人当前话语: {broker_input}
 
 对话历史上下文:
-{context}
+{context}{stage_continuity_prompt}
 
 请从以下6个维度分析：
 1. 讨论主题：当前讨论的主要保险话题（如"重疾险咨询"、"保费计算"、"理赔流程"等）
@@ -180,20 +202,27 @@ class AgencyAssistant:
                 if field not in intent_analysis:
                     intent_analysis[field] = "未识别" if field not in ["涉及术语", "涉及产品"] else []
                     
+            # 保存当前阶段性意图，供下一回合使用
+            current_stage_intent = intent_analysis.get("经纪人阶段性意图识别", "未识别")
+            state["previous_stage_intent"] = current_stage_intent
             state["intent_analysis"] = intent_analysis
+            
+            logger.info(f"阶段性意图连续性处理：上一回合={previous_stage_intent}, 当前回合={current_stage_intent}")
             
         except Exception as e:
             logger.error(f"意图识别失败: {e}")
             state["error_message"] = f"意图识别失败: {str(e)}"
             # 设置默认值
+            default_stage_intent = previous_stage_intent if previous_stage_intent else "未识别"
             state["intent_analysis"] = {
                 "讨论主题": "未识别",
                 "涉及术语": [],
                 "涉及产品": [],
-                "经纪人阶段性意图识别": "未识别",
+                "经纪人阶段性意图识别": default_stage_intent,
                 "经纪人本句话意图识别": "未识别",
                 "用户当下需求": "未识别"
             }
+            state["previous_stage_intent"] = default_stage_intent
 
         return state
 
@@ -308,6 +337,7 @@ class AgencyAssistant:
 
             # RAG检索相关坑点
             pit_warnings = ""
+            pit_results = []
             if self.pit_retriever:
                 try:
                     # 构建检索查询：结合经纪人话语和意图信息
@@ -336,6 +366,10 @@ class AgencyAssistant:
                 except Exception as e:
                     logger.error(f"RAG检索失败: {e}")
                     pit_warnings = ""
+                    pit_results = []
+            
+            # 保存检索到的坑点信息到状态中
+            state["retrieved_pits"] = pit_results
 
             # 构建增强的建议生成prompt
             base_prompt = f"""根据经纪人话语和意图分析，为AI扮演的保险用户提供3-5个实用的对话建议。
@@ -495,7 +529,9 @@ class AgencyAssistant:
                 "intent_analysis": None,
                 "user_response": "",
                 "suggestions": None,
-                "error_message": None
+                "error_message": None,
+                "previous_stage_intent": None,
+                "retrieved_pits": None
             }
 
             # 执行工作流
@@ -525,10 +561,12 @@ class AgencyAssistant:
                         
                         # 完成建议生成后立即返回
                         suggestions = node_output.get("suggestions", [])
+                        retrieved_pits = node_output.get("retrieved_pits", [])
                         if suggestions:
                             yield SuggestionsResponse(
                                 type="suggestions",
-                                suggestions=suggestions
+                                suggestions=suggestions,
+                                retrieved_pits=retrieved_pits
                             )
                             
                     elif node_name == "generate_user_response":

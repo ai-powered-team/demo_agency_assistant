@@ -337,8 +337,8 @@ class PitRetriever:
                     "similarity": similarity,
                     "score": score,  # 保留原始分数用于调试
                     "category": doc.metadata.get("category", "未分类"),
-                    "title": doc.metadata.get("标题", ""),
-                    "reason": doc.metadata.get("坑点原因", "")
+                    "title": doc.metadata.get("title", ""),
+                    "reason": doc.metadata.get("reason", "")
                 }
                 all_candidates.append(candidate)
                 

@@ -268,6 +268,7 @@ class SuggestionsResponse(BaseResponse):
     """对话建议响应类型"""
     type: str  # "suggestions"
     suggestions: List[str]                  # 给用户的建议列表
+    retrieved_pits: Optional[List[dict]] = None  # 检索到的坑点信息
 
 
 class AssistantResponse(BaseResponse):

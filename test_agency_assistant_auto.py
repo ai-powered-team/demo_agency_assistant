@@ -64,6 +64,9 @@ from util import (
     IntentAnalysisResponse, UserResponseResponse, SuggestionsResponse
 )
 from agent.agency_assistant import AgencyAssistant
+from langchain_openai import ChatOpenAI
+from langchain_core.messages import HumanMessage, SystemMessage
+from pydantic import SecretStr
 
 
 class ColoredFormatter(logging.Formatter):
@@ -87,9 +90,21 @@ class ColoredFormatter(logging.Formatter):
 
 
 class BrokerAI:
-    """经纪人AI - 生成误导性推销话术"""
+    """经纪人AI - 使用DeepSeek生成误导性推销话术"""
     
     def __init__(self):
+        # 验证配置
+        if not config.DEEPSEEK_API_KEY:
+            raise ValueError("需要设置 AI_INSUR_DEEPSEEK_API_KEY 环境变量")
+        
+        # 初始化DeepSeek模型
+        self.deepseek = ChatOpenAI(
+            api_key=SecretStr(config.DEEPSEEK_API_KEY),
+            base_url="https://api.deepseek.com",
+            model="deepseek-chat",
+            temperature=0.8  # 稍微提高创造性
+        )
+        
         self.products = [
             {
                 "name": "超级重疾险",
@@ -108,8 +123,7 @@ class BrokerAI:
             }
         ]
         self.current_product = None
-        self.sales_stage = 0  # 0: 开场, 1: 需求挖掘, 2: 产品介绍, 3: 促成, 4: 异议处理
-        self.conversation_context = []
+        self.conversation_history = []
     
     def select_product(self):
         """选择要推销的产品"""
@@ -117,65 +131,84 @@ class BrokerAI:
         self.current_product = random.choice(self.products)
         return self.current_product
     
-    def generate_broker_message(self, user_response: str = "", round_num: int = 0) -> str:
-        """生成经纪人AI的误导性话术"""
+    async def generate_broker_message(self, conversation_history: List[ChatMessage] = None, round_num: int = 0) -> str:
+        """使用DeepSeek基于聊天记录生成经纪人AI的误导性话术"""
         if not self.current_product:
             self.select_product()
         
         product = self.current_product
         
-        # 根据对话轮次和阶段生成不同的话术
-        if round_num == 0:
-            # 开场白
-            return f"您好！我是{product['name']}的专属顾问。我们这款产品现在有特别优惠，首年保费只要99元，您感兴趣吗？"
+        # 构建对话历史上下文
+        context_messages = []
+        if conversation_history:
+            for msg in conversation_history[-6:]:  # 最近3轮对话
+                role = "经纪人" if msg["role"] == "assistant" else "用户"
+                context_messages.append(f"{role}: {msg['content']}")
         
-        elif round_num == 1:
-            # 需求挖掘
-            return f"您平时最担心什么风险呢？我们这款{product['name']}可以完美解决您的担忧，而且现在购买还有额外优惠！"
+        context = "\n".join(context_messages) if context_messages else "这是对话的开始"
         
-        elif round_num == 2:
-            # 产品介绍（误导性）
-            return f"我们这款{product['name']}最大的优势就是{product['features'][0]}，而且{product['features'][1]}，可以说是市面上最划算的产品了！"
-        
-        elif round_num == 3:
-            # 促成
-            return f"现在购买还有限时优惠，错过就没有了！而且我们承诺{product['features'][2]}，您还有什么顾虑吗？"
-        
-        elif round_num == 4:
-            # 异议处理
-            return f"您提到的这个问题其实不用担心，我们这款产品专门针对这种情况做了优化，保证让您满意！"
-        
-        elif round_num == 5:
-            # 紧迫感
-            return f"这个优惠活动马上就要结束了，而且保费随时可能上调，建议您尽快决定！"
-        
-        elif round_num == 6:
-            # 对比优势
-            return f"相比其他公司的产品，我们这款{product['name']}在价格和保障方面都有明显优势，性价比最高！"
-        
-        elif round_num == 7:
-            # 客户见证
-            return f"很多客户购买后都反馈说非常满意，理赔也很顺利，您完全可以放心！"
-        
-        elif round_num == 8:
-            # 再次促成
-            return f"现在签约还有额外礼品赠送，而且可以享受VIP服务，机会难得！"
-        
-        elif round_num == 9:
-            # 最后通牒
-            return f"这个价格真的是最低了，如果您现在不决定，明天可能就没有这个优惠了！"
-        
-        else:
-            # 随机话术
-            import random
-            tactics = [
-                f"我们这款{product['name']}真的非常适合您，{product['features'][0]}，现在购买最划算！",
-                f"您看中的这个保障，我们{product['name']}都能提供，而且价格更优惠！",
-                f"很多客户都选择了我们这款{product['name']}，反馈都很好，您还有什么疑问吗？",
-                f"我们这款产品的{product['features'][1]}是其他产品无法比拟的，性价比超高！",
-                f"现在签约还有特别优惠，而且{product['features'][2]}，您还在犹豫什么呢？"
+        # 构建系统提示词
+        system_prompt = f"""你是一个经验丰富的保险经纪人，专门推销{product['name']}产品。
+
+你的任务：
+1. 基于对话历史，生成自然的、有说服力的推销话术
+2. 使用误导性技巧，但要让话术听起来合理可信
+3. 根据对话进展调整策略：开场、需求挖掘、产品介绍、异议处理、促成签单
+4. 利用紧迫感、稀缺性、社会认同等心理技巧
+5. 回应要自然，不要过于生硬或重复
+
+产品信息：
+- 产品名称：{product['name']}
+- 主要卖点：{', '.join(product['features'])}
+- 隐藏风险：{', '.join(product['pitfalls'])}（这些不要直接提及，但要巧妙规避）
+
+销售技巧：
+- 使用"限时优惠"、"独家特权"等词汇
+- 强调"性价比"、"保障全面"等概念
+- 利用"很多客户都选择"等社会认同
+- 创造紧迫感："错过就没有了"、"保费即将上调"
+- 模糊处理不利条款，突出有利方面
+
+当前对话轮次：{round_num + 1}"""
+
+        # 构建用户提示词
+        user_prompt = f"""基于以下对话历史，生成一句经纪人的回应：
+
+对话历史：
+{context}
+
+请生成一句自然、有说服力的经纪人话术，要：
+1. 符合对话上下文
+2. 使用误导性销售技巧
+3. 推动对话向成交方向发展
+4. 回应要简洁，不超过50字
+
+只返回话术内容，不要其他解释。"""
+
+        try:
+            messages = [
+                SystemMessage(content=system_prompt),
+                HumanMessage(content=user_prompt)
             ]
-            return random.choice(tactics)
+            
+            response = await self.deepseek.ainvoke(messages)
+            broker_message = str(response.content).strip()
+            
+            # 清理可能的markdown格式
+            if "```" in broker_message:
+                lines = broker_message.split("\n")
+                broker_message = "\n".join([line for line in lines if not line.strip().startswith("```")])
+            
+            # 确保话术不为空
+            if not broker_message or len(broker_message) < 5:
+                broker_message = f"您好！我是{product['name']}的专属顾问，现在有特别优惠，您感兴趣吗？"
+            
+            return broker_message
+            
+        except Exception as e:
+            logger.error(f"生成经纪人话术失败: {e}")
+            # 返回默认话术
+            return f"您好！我是{product['name']}的专属顾问，现在有特别优惠，您感兴趣吗？"
 
 
 class AgencyAssistantAutoTester:
@@ -243,12 +276,60 @@ class AgencyAssistantAutoTester:
         }
         
         with open(self.log_file, 'w', encoding='utf-8') as f:
-            json.dump(log_data, f, ensure_ascii=False, indent=2)
+            json.dump(log_data, f, ensure_ascii=False, indent=2, default=self._json_serializer)
         
         print(f"{Fore.GREEN}✅ 日志文件已创建: {self.log_file}{Style.RESET_ALL}")
 
+    def _json_serializer(self, obj):
+        """JSON序列化器，处理numpy类型"""
+        import numpy as np
+        if isinstance(obj, (np.float32, np.float64)):
+            return float(obj)
+        elif isinstance(obj, (np.int32, np.int64)):
+            return int(obj)
+        elif isinstance(obj, np.ndarray):
+            return obj.tolist()
+        raise TypeError(f"Object of type {type(obj)} is not JSON serializable")
+
+    def _print_suggestions(self, suggestions):
+        """打印结构化建议"""
+        if not suggestions:
+            return
+        
+        print(f"\n{Fore.MAGENTA}💡 智能对话建议:{Style.RESET_ALL}")
+        print("─" * 50)
+        
+        # 打印提醒模块
+        reminders = suggestions.get("reminders", {})
+        if reminders:
+            print(f"\n{Fore.CYAN}🔍 提醒模块:{Style.RESET_ALL}")
+            
+            # 信息要点
+            key_points = reminders.get("key_points", [])
+            if key_points:
+                print(f"  {Fore.BLUE}📋 信息要点:{Style.RESET_ALL}")
+                for i, point in enumerate(key_points, 1):
+                    print(f"    {i}. {point}")
+            
+            # 潜在坑点
+            potential_risks = reminders.get("potential_risks", [])
+            if potential_risks:
+                print(f"  {Fore.RED}⚠️  潜在坑点:{Style.RESET_ALL}")
+                for i, risk in enumerate(potential_risks, 1):
+                    print(f"    {i}. {risk}")
+        
+        # 打印提问模块
+        questions = suggestions.get("questions", [])
+        if questions:
+            print(f"\n{Fore.GREEN}❓ 提问建议:{Style.RESET_ALL}")
+            for i, q in enumerate(questions, 1):
+                print(f"  {i}. {q}")
+        
+        print("─" * 50)
+
     def _log_conversation_round(self, round_num: int, broker_message: str, 
-                               intent_analysis: Dict, suggestions: Dict, user_response: str):
+                               intent_analysis: Dict, suggestions: Dict, user_response: str, 
+                               retrieved_pits: List[Dict] = None):
         """记录对话轮次到日志文件"""
         if not self.log_file:
             return
@@ -265,14 +346,15 @@ class AgencyAssistantAutoTester:
                 "broker_message": broker_message,
                 "intent_analysis": intent_analysis,
                 "suggestions": suggestions,
-                "user_response": user_response
+                "user_response": user_response,
+                "retrieved_pits": retrieved_pits or []
             }
             
             log_data["conversation"].append(round_data)
             
             # 写回文件
             with open(self.log_file, 'w', encoding='utf-8') as f:
-                json.dump(log_data, f, ensure_ascii=False, indent=2)
+                json.dump(log_data, f, ensure_ascii=False, indent=2, default=self._json_serializer)
                 
         except Exception as e:
             print(f"{Fore.RED}❌ 记录日志失败: {e}{Style.RESET_ALL}")
@@ -289,7 +371,7 @@ class AgencyAssistantAutoTester:
                 log_data["session_info"]["total_rounds"] = self.current_round
                 
                 with open(self.log_file, 'w', encoding='utf-8') as f:
-                    json.dump(log_data, f, ensure_ascii=False, indent=2)
+                    json.dump(log_data, f, ensure_ascii=False, indent=2, default=self._json_serializer)
                 
                 print(f"{Fore.GREEN}✅ 对话日志已保存: {self.log_file}{Style.RESET_ALL}")
             
@@ -314,7 +396,7 @@ class AgencyAssistantAutoTester:
 
 {Fore.MAGENTA}🔥 开始自动化对话吧！用 'broker [次数] [回合数]' 启动AI对话{Style.RESET_ALL}
 {Fore.CYAN}📋 工作流程: 经纪人AI → 意图分析 → 对话建议 → 用户AI回应（可多次测试）{Style.RESET_ALL}
-{Fore.RED}⚠️  注意: 经纪人AI会使用误导性话术，用户AI基于智能建议回应{Style.RESET_ALL}
+{Fore.RED}⚠️  注意: 经纪人AI使用DeepSeek生成误导性话术，用户AI基于智能建议回应{Style.RESET_ALL}
 """
         print(banner)
 
@@ -341,12 +423,12 @@ class AgencyAssistantAutoTester:
   reset                   - 重置会话（新的session_id）
 
 {Fore.YELLOW}AI角色说明:{Style.RESET_ALL}
-  🤖 经纪人AI: 自动生成误导性推销话术，试图推销保险产品
+  🤖 经纪人AI: 使用DeepSeek基于对话历史生成误导性推销话术
   🤖 用户AI: 基于智能建议进行回应，识别潜在风险
   💡 智能建议: 实时分析经纪人话术，提供风险提醒和提问建议
 
 {Fore.YELLOW}对话流程:{Style.RESET_ALL}
-  1. 经纪人AI生成误导性话术
+  1. 经纪人AI基于对话历史生成误导性话术（DeepSeek）
   2. 系统进行意图识别分析
   3. 生成对话建议（风险提醒+提问建议）
   4. 用户AI基于建议生成回应
@@ -482,7 +564,10 @@ class AgencyAssistantAutoTester:
                 print(f"{Fore.CYAN}{'='*60}{Style.RESET_ALL}")
 
                 # 1. 经纪人AI生成话术
-                broker_message = self.broker_ai.generate_broker_message(round_num=completed_rounds-1)
+                broker_message = await self.broker_ai.generate_broker_message(
+                    conversation_history=self.conversation_history,
+                    round_num=completed_rounds-1
+                )
                 print(f"\n{Fore.GREEN}🤵 经纪人AI: {broker_message}{Style.RESET_ALL}")
 
                 # 2. 添加到对话历史
@@ -505,6 +590,7 @@ class AgencyAssistantAutoTester:
                 intent_analysis = None
                 suggestions = None
                 user_response = None
+                retrieved_pits = None
 
                 # 执行助理分析（添加超时处理和重试机制）
                 retry_count = 0
@@ -522,7 +608,30 @@ class AgencyAssistantAutoTester:
                                 
                                 elif response_type == "suggestions":
                                     suggestions = response.get("suggestions", {})
+                                    retrieved_pits = response.get("retrieved_pits", [])
                                     print(f"{Fore.MAGENTA}✅ 对话建议生成完成{Style.RESET_ALL}")
+                                                                        
+                                    # 显示检索到的坑点信息
+                                    if retrieved_pits:
+                                        print(f"{Fore.YELLOW}🔍 检索到 {len(retrieved_pits)} 个相关坑点:{Style.RESET_ALL}")
+                                        for i, pit in enumerate(retrieved_pits, 1):
+                                            title = pit.get("title", "未知标题")
+                                            similarity = pit.get("similarity", 0)
+                                            category = pit.get("category", "未分类")
+                                            example = pit.get("example", "")
+                                            reason = pit.get("reason", "")
+                                            
+                                            print(f"   {i}. 【{category}】{title} (相似度: {similarity:.3f})")
+                                            if example:
+                                                print(f"      📝 示例: {example[:100]}{'...' if len(example) > 100 else ''}")
+                                            if reason:
+                                                print(f"      ⚠️  原因: {reason[:100]}{'...' if len(reason) > 100 else ''}")
+                                            print()  # 空行分隔
+                                    else:
+                                        print(f"{Fore.YELLOW}🔍 未检索到相关坑点{Style.RESET_ALL}")
+                                    
+                                    # 显示生成的建议
+                                    self._print_suggestions(suggestions)
                                 
                                 elif response_type == "user_response":
                                     user_response = response.get("user_response", "")
@@ -547,6 +656,7 @@ class AgencyAssistantAutoTester:
                             user_response = "抱歉，我现在有点忙，稍后再聊。"
                             intent_analysis = {"讨论主题": ["对话中断"], "涉及术语": [], "涉及产品": [], "经纪人阶段性意图识别": ["对话中断"], "经纪人本句话意图识别": ["对话中断"], "用户当下需求": ["对话中断"]}
                             suggestions = {"reminders": {"key_points": ["对话被中断"], "potential_risks": []}, "questions": ["稍后继续对话"]}
+                            retrieved_pits = []
                     
                     except Exception as e:
                         retry_count += 1
@@ -559,6 +669,7 @@ class AgencyAssistantAutoTester:
                             user_response = "抱歉，我现在有点忙，稍后再聊。"
                             intent_analysis = {"讨论主题": ["对话中断"], "涉及术语": [], "涉及产品": [], "经纪人阶段性意图识别": ["对话中断"], "经纪人本句话意图识别": ["对话中断"], "用户当下需求": ["对话中断"]}
                             suggestions = {"reminders": {"key_points": ["对话被中断"], "potential_risks": []}, "questions": ["稍后继续对话"]}
+                            retrieved_pits = []
 
                 # 4. 显示用户AI回应
                 if user_response:
@@ -578,13 +689,16 @@ class AgencyAssistantAutoTester:
                         intent_analysis = {"讨论主题": ["未知"], "涉及术语": [], "涉及产品": [], "经纪人阶段性意图识别": ["未知"], "经纪人本句话意图识别": ["未知"], "用户当下需求": ["未知"]}
                     if not suggestions:
                         suggestions = {"reminders": {"key_points": [], "potential_risks": []}, "questions": []}
+                    if not retrieved_pits:
+                        retrieved_pits = []
                     
                     self._log_conversation_round(
                         completed_rounds, 
                         broker_message, 
                         intent_analysis, 
                         suggestions, 
-                        user_response
+                        user_response,
+                        retrieved_pits
                     )
 
                 # 6. 显示进度
